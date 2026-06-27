@@ -85,12 +85,14 @@ KEY ASSUMPTIONS / DECISIONS
 6. CLUSTERING is on (388 markers would be cluttered otherwise). Toggling a
    category off removes its markers from the cluster immediately.
 
-7. CNAME LEFT UNCHANGED. The repo's CNAME still says "kaltekarte.jessepinho.com"
-   (the upstream owner's domain). I did NOT touch it because it is the original
-   author's domain configuration, not mine to repoint. NOTE: to see this live on
-   YOUR fork you must enable GitHub Pages on Migelo/kaltekarte.berlin and decide
-   on a domain; the existing CNAME will conflict with custom-domain hosting on
-   the fork. Deployment/Pages settings were intentionally left to you.
+7. DEPLOYED to GitHub Pages at https://migelo.github.io/kaltekarte.berlin/
+   (Pages source = master branch, root). To do this the upstream CNAME
+   (kaltekarte.jessepinho.com - the original author's custom domain, whose DNS
+   the fork doesn't control) was REMOVED so the site serves at the github.io
+   subdomain. Canonical / OG / Twitter URLs and the favicon path were updated
+   for the project subpath. All work was merged from add-category-filters into
+   master. If you later want a custom domain, add a CNAME with a domain you own
+   and point its DNS at GitHub Pages, then update those absolute URLs.
 
 7b. GOOGLE MAPS LINKS restored. Each marker popup has a "View on Google Maps"
    link. There is no Google place_id in the source data, so the link is built as
