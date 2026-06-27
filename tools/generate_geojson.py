@@ -161,6 +161,8 @@ def main():
     dupes = []      # exact (name, coordinate) repeats
     seen = set()
 
+    # Collect raw (name, lon, lat) points from the KML export...
+    raw = []
     for pm in placemarks:
         nm = re.search(r"<name>(.*?)</name>", pm, re.S)
         co = re.search(r"<coordinates>(.*?)</coordinates>", pm, re.S)
@@ -173,6 +175,22 @@ def main():
         except (ValueError, IndexError):
             rejected.append((name, co.group(1).strip()))
             continue
+        raw.append((name, lon, lat))
+
+    # ...plus community submissions added via the site's "Add a location" flow
+    # (drop a pin -> GitHub issue -> Action appends here -> PR). Same shape:
+    # [{"name": ..., "lat": ..., "lon": ...}, ...].
+    extra_count = 0
+    xpath = os.path.join(HERE, "extra_locations.json")
+    if os.path.exists(xpath):
+        for item in json.load(open(xpath, encoding="utf-8")):
+            try:
+                raw.append((str(item["name"]).strip(), float(item["lon"]), float(item["lat"])))
+                extra_count += 1
+            except (KeyError, TypeError, ValueError):
+                rejected.append((str(item), "bad extra_locations entry"))
+
+    for name, lon, lat in raw:
         if not (LAT_MIN <= lat <= LAT_MAX and LON_MIN <= lon <= LON_MAX):
             rejected.append((name, f"{lat},{lon}"))
             continue
@@ -214,7 +232,8 @@ def main():
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(geojson, f, ensure_ascii=False, indent=1)
 
-    print(f"wrote {len(features)} features to {OUT}  ({len(placemarks)} placemarks in source)")
+    print(f"wrote {len(features)} features to {OUT}  "
+          f"({len(placemarks)} from KML + {extra_count} community submissions)")
     print("\n=== category counts ===")
     for cat, c in counts.most_common():
         print(f"{c:4d}  {cat}")

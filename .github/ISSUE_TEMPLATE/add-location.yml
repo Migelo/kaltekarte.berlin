@@ -1,0 +1,33 @@
+name: Add a location
+description: Suggest a new air-conditioned place in Berlin to add to the map.
+title: "Add location: "
+labels: ["new-location"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a cool spot! If you came from the map's
+        **"Add a location"** button, the name and coordinates below are already
+        filled in from the pin you dropped. Otherwise, fill them in by hand.
+  - type: input
+    id: place-name
+    attributes:
+      label: Place name
+      placeholder: e.g. REWE City
+    validations:
+      required: true
+  - type: input
+    id: coordinates
+    attributes:
+      label: Coordinates (lat,lon)
+      description: Decimal degrees, e.g. 52.520000,13.405000
+      placeholder: 52.520000,13.405000
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      placeholder: Anything useful (which floor, how reliably cool it is, etc.)
+    validations:
+      required: false
