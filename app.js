@@ -38,6 +38,7 @@ var allMarkers = [];      // [{ category, marker, name, lat, lon, id }]
 var counts = {};          // category -> number of points
 var userLatLng = null;    // set once geolocation succeeds
 var userMarker = null;    // "you are here" marker
+var query = '';           // current text search (lowercased)
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, function (ch) {
@@ -64,13 +65,48 @@ function markerIcon(cat) {
   });
 }
 
+// Recompute which markers are visible (category filters + text search), push
+// them into the cluster, update the count, and refresh the results list.
 function rebuild() {
   cluster.clearLayers();
-  var layers = [];
+  var visible = [];
   for (var i = 0; i < allMarkers.length; i++) {
-    if (active[allMarkers[i].category]) layers.push(allMarkers[i].marker);
+    var m = allMarkers[i];
+    if (!active[m.category]) continue;
+    if (query && m.name.toLowerCase().indexOf(query) === -1) continue;
+    visible.push(m);
   }
-  cluster.addLayers(layers);
+  cluster.addLayers(visible.map(function (m) { return m.marker; }));
+  var countEl = document.getElementById('result-count');
+  if (countEl) countEl.textContent = visible.length + ' / ' + allMarkers.length;
+  renderList(visible);
+}
+
+// Render the (optional) results list, sorted by distance when located else by
+// name. Capped so a huge unfiltered list stays responsive.
+function renderList(visible) {
+  var listEl = document.getElementById('results-list');
+  if (!listEl) return;
+  var items = visible.slice();
+  if (userLatLng) {
+    items.forEach(function (m) { m._d = map.distance(userLatLng, m.marker.getLatLng()); });
+    items.sort(function (a, b) { return a._d - b._d; });
+  } else {
+    items.sort(function (a, b) { return a.name.localeCompare(b.name); });
+  }
+  var MAX = 120;
+  var html = items.slice(0, MAX).map(function (m) {
+    var c = CATEGORY_BY_KEY[m.category];
+    var dist = (userLatLng && typeof m._d === 'number')
+      ? '<span class="li-dist">' + formatDistance(m._d) + '</span>' : '';
+    return '<button class="result-row" type="button" data-id="' + m.id + '">' +
+      '<span class="dot" style="background:' + c.color + '"><span class="ic">' + c.emoji + '</span></span>' +
+      '<span class="li-name">' + escapeHtml(m.name) + '</span>' + dist + '</button>';
+  }).join('');
+  if (items.length > MAX) {
+    html += '<div class="list-more">+' + (items.length - MAX) + ' more \u{2014} zoom in or search</div>';
+  }
+  listEl.innerHTML = html || '<div class="list-empty">No places match.</div>';
 }
 
 function buildFilterUI() {
@@ -90,6 +126,7 @@ function buildFilterUI() {
       active[c.key] = !active[c.key];
       btn.classList.toggle('active', active[c.key]);
       rebuild();
+      writeHash();
     });
     container.appendChild(btn);
   });
@@ -99,18 +136,122 @@ function buildFilterUI() {
     var chips = container.querySelectorAll('.filter-chip');
     for (var i = 0; i < chips.length; i++) chips[i].classList.toggle('active', state);
     rebuild();
+    writeHash();
   }
   document.getElementById('filter-all').addEventListener('click', function () { setAll(true); });
   document.getElementById('filter-none').addEventListener('click', function () { setAll(false); });
 
   var panel = document.getElementById('filters');
-  document.getElementById('filter-toggle').addEventListener('click', function () {
-    panel.classList.toggle('collapsed');
+  var toggleBtn = document.getElementById('filter-toggle');
+  toggleBtn.addEventListener('click', function () {
+    var collapsed = panel.classList.toggle('collapsed');
+    toggleBtn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
   });
 
   // Start collapsed on small screens so the panel doesn't cover the map.
   if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
     panel.classList.add('collapsed');
+  }
+}
+
+// Reflect the `active` object onto the chip .active classes (used after a hash
+// restore sets state programmatically).
+function applyActiveToChips() {
+  var chips = document.querySelectorAll('#filter-chips .filter-chip');
+  for (var i = 0; i < chips.length; i++) {
+    var k = chips[i].getAttribute('data-cat');
+    chips[i].classList.toggle('active', !!active[k]);
+  }
+}
+
+// Serialize current filters/search/view into the URL hash (shareable links).
+// replaceState avoids polluting history and firing hashchange.
+function writeHash() {
+  var on = CATEGORIES.filter(function (c) { return active[c.key]; })
+                     .map(function (c) { return c.key; });
+  var parts = [];
+  if (on.length !== CATEGORIES.length) parts.push('cat=' + on.join(','));
+  if (query) parts.push('q=' + encodeURIComponent(query));
+  if (map) {
+    var ctr = map.getCenter();
+    parts.push('z=' + map.getZoom());
+    parts.push('c=' + ctr.lat.toFixed(5) + ',' + ctr.lng.toFixed(5));
+  }
+  var hash = parts.length ? '#' + parts.join('&') : location.pathname + location.search;
+  history.replaceState(null, '', hash);
+}
+
+// Apply a hash on load. Returns true if it set an explicit map view.
+function readHash() {
+  var h = location.hash.replace(/^#/, '');
+  if (!h) return false;
+  var params = {};
+  h.split('&').forEach(function (kv) {
+    var i = kv.indexOf('=');
+    if (i > 0) params[kv.slice(0, i)] = kv.slice(i + 1);
+  });
+  if (params.cat !== undefined) {
+    var set = {};
+    decodeURIComponent(params.cat).split(',').forEach(function (k) { if (k) set[k] = true; });
+    CATEGORIES.forEach(function (c) { active[c.key] = !!set[c.key]; });
+  }
+  if (params.q) {
+    query = decodeURIComponent(params.q).toLowerCase();
+    var inp = document.getElementById('filter-search');
+    if (inp) inp.value = decodeURIComponent(params.q);
+  }
+  var hadView = false;
+  if (params.c && params.z) {
+    var cc = params.c.split(',');
+    var lat = parseFloat(cc[0]), lng = parseFloat(cc[1]), z = parseInt(params.z, 10);
+    if (!isNaN(lat) && !isNaN(lng) && !isNaN(z)) { map.setView([lat, lng], z); hadView = true; }
+  }
+  return hadView;
+}
+
+// Wire the search box, results list, and about dialog.
+function initDiscovery() {
+  var search = document.getElementById('filter-search');
+  if (search) {
+    search.addEventListener('input', function () {
+      query = this.value.trim().toLowerCase();
+      rebuild();
+      writeHash();
+    });
+  }
+
+  var listToggle = document.getElementById('list-toggle');
+  var results = document.getElementById('results');
+  if (listToggle && results) {
+    listToggle.addEventListener('click', function () {
+      var open = results.classList.toggle('open');
+      listToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    var closeList = document.getElementById('results-close');
+    if (closeList) closeList.addEventListener('click', function () { results.classList.remove('open'); });
+  }
+
+  var resultsList = document.getElementById('results-list');
+  if (resultsList) {
+    resultsList.addEventListener('click', function (e) {
+      var row = e.target.closest ? e.target.closest('.result-row') : null;
+      if (!row) return;
+      var rec = allMarkers[parseInt(row.getAttribute('data-id'), 10)];
+      if (!rec) return;
+      cluster.zoomToShowLayer(rec.marker, function () { rec.marker.openPopup(); });
+      if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
+        results.classList.remove('open');
+      }
+    });
+  }
+
+  var about = document.getElementById('about');
+  var aboutBtn = document.getElementById('about-btn');
+  if (about && aboutBtn) {
+    aboutBtn.addEventListener('click', function () { about.hidden = false; });
+    var aboutClose = document.getElementById('about-close');
+    if (aboutClose) aboutClose.addEventListener('click', function () { about.hidden = true; });
+    about.addEventListener('click', function (e) { if (e.target === about) about.hidden = true; });
   }
 }
 
@@ -167,12 +308,14 @@ function requestLocation(cb, cbErr) {
      { enableHighAccuracy: false, timeout: 8000, maximumAge: 60000 });
 }
 
-// On load: locate silently and recenter only if the user is near Berlin.
-function autoLocate() {
+// On load: locate silently. Recenter only if `recenter` (no shared view in the
+// URL) and the user is near Berlin. Refresh the list to sort by distance.
+function autoLocate(recenter) {
   requestLocation(function (ll) {
-    if (ll.lat > 52.0 && ll.lat < 53.0 && ll.lng > 12.8 && ll.lng < 13.9) {
+    if (recenter && ll.lat > 52.0 && ll.lat < 53.0 && ll.lng > 12.8 && ll.lng < 13.9) {
       map.setView(ll, 14);
     }
+    rebuild();
   });
 }
 
@@ -262,14 +405,18 @@ function init() {
   if (locateBtn) locateBtn.addEventListener('click', findNearest);
 
   loadHeatBanner();
+  initDiscovery();
+  map.on('moveend', writeHash);
 
   fetch('points.geojson')
     .then(function (r) { return r.json(); })
     .then(function (geojson) {
       addPoints(geojson);
       buildFilterUI();
+      var hadView = readHash();
+      applyActiveToChips();
       rebuild();
-      autoLocate();
+      autoLocate(!hadView);
     })
     .catch(function (err) {
       console.error('Failed to load points.geojson', err);

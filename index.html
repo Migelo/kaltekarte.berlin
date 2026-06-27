@@ -74,11 +74,38 @@
     <div id="filters" aria-label="Filter locations by category">
       <div id="filter-head">
         <strong class="filter-title">Filter</strong>
+        <span id="result-count" class="result-count"></span>
+        <button type="button" id="about-btn" class="filter-ctl" aria-label="About this map">?</button>
+        <button type="button" id="filter-toggle" class="filter-ctl" aria-label="Show or hide filters" aria-expanded="true" aria-controls="filter-chips">&#9776;</button>
+      </div>
+      <input type="search" id="filter-search" placeholder="Search by name..." aria-label="Search places by name" autocomplete="off" />
+      <div id="filter-bulk">
         <button type="button" id="filter-all" class="filter-ctl">All</button>
         <button type="button" id="filter-none" class="filter-ctl">None</button>
-        <button type="button" id="filter-toggle" class="filter-ctl" aria-label="Show/hide filters">&#9776;</button>
       </div>
       <div id="filter-chips"></div>
+    </div>
+
+    <button type="button" id="list-toggle" aria-expanded="false" aria-controls="results" title="Show list of places">
+      &#9776; List
+    </button>
+
+    <div id="results">
+      <div id="results-head">
+        <strong>Nearest places</strong>
+        <button type="button" id="results-close" aria-label="Close list">&times;</button>
+      </div>
+      <div id="results-list"></div>
+    </div>
+
+    <div id="about" hidden>
+      <div id="about-box">
+        <button type="button" id="about-close" aria-label="Close">&times;</button>
+        <h2>&#10052; Kalte Karte</h2>
+        <p>A map of air-conditioned places in Berlin where you can beat the heat &mdash; supermarkets, cafes, shops, cinemas, libraries and more.</p>
+        <p>Use the <strong>category filters</strong> or the <strong>search box</strong> to narrow things down, tap <strong>&#10052; Nearest</strong> to jump to the closest cool spot, and open a pin for distance, walking directions and a Google Maps link.</p>
+        <p>Know a spot that's missing? Use <strong>Add a location</strong> below. Map data &copy; OpenStreetMap contributors.</p>
+      </div>
     </div>
 
     <footer id="buttons">
