@@ -360,6 +360,16 @@ function findNearest() {
   });
 }
 
+// Recenter the map on the user's current location and show the "you are here"
+// marker. Unlike findNearest, this does not open any place popup.
+function locateMe() {
+  requestLocation(function (ll) {
+    map.setView(ll, 15);
+  }, function (reason) {
+    toast(reason === 'denied' ? 'Location permission denied.' : 'Location unavailable.');
+  });
+}
+
 function toast(msg) {
   var t = document.getElementById('toast');
   if (!t) return;
@@ -418,6 +428,9 @@ function init() {
 
   var locateBtn = document.getElementById('locate-btn');
   if (locateBtn) locateBtn.addEventListener('click', findNearest);
+
+  var locateMeBtn = document.getElementById('locate-me-btn');
+  if (locateMeBtn) locateMeBtn.addEventListener('click', locateMe);
 
   loadHeatBanner();
   initDiscovery();

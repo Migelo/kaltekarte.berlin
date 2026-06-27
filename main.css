@@ -102,6 +102,29 @@ body {
   background: #1a5fd0;
 }
 
+/* ---- Locate-me button (floating, bottom-right, stacked above List) ---- */
+
+#locate-me-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 174px;
+  z-index: 1000;
+  background: #16a3b3;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 9px 15px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+#locate-me-btn:hover {
+  background: #138291;
+}
+
 /* ---- Toast (bottom-center) ---- */
 
 #toast {
