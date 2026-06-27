@@ -247,6 +247,22 @@ body {
   line-height: 1;
 }
 
+.popup-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 10px;
+  background: #4d6a79;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.popup-link:hover {
+  background: #3c5462;
+}
+
 .err {
   color: #c0392b;
   font-size: 0.85rem;

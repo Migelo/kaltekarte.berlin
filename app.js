@@ -43,6 +43,14 @@ function escapeHtml(s) {
   });
 }
 
+// Google Maps link for an entry. Combining the business name with the exact
+// coordinates makes Google resolve to the real listing (hours, reviews,
+// directions) at that spot rather than a generic pin.
+function gmapsUrl(name, lat, lon) {
+  var query = encodeURIComponent(name + ' ' + lat + ',' + lon);
+  return 'https://www.google.com/maps/search/?api=1&query=' + query;
+}
+
 function markerIcon(cat) {
   var c = CATEGORY_BY_KEY[cat] || CATEGORY_BY_KEY.other;
   return L.divIcon({
@@ -110,13 +118,16 @@ function addPoints(geojson) {
     if (!CATEGORY_BY_KEY[cat]) cat = 'other';
     counts[cat] = (counts[cat] || 0) + 1;
     var coords = f.geometry.coordinates; // [lon, lat]
-    var marker = L.marker([coords[1], coords[0]], { icon: markerIcon(cat) });
+    var lat = coords[1], lon = coords[0];
+    var marker = L.marker([lat, lon], { icon: markerIcon(cat) });
     var c = CATEGORY_BY_KEY[cat];
     marker.bindPopup(
       '<div class="popup">' +
       '<strong>' + escapeHtml(f.properties.name) + '</strong>' +
       '<div class="popup-cat"><span class="dot" style="background:' + c.color + '"><span class="ic">' +
       c.emoji + '</span></span>' + c.label + '</div>' +
+      '<a class="popup-link" href="' + gmapsUrl(f.properties.name, lat, lon) +
+      '" target="_blank" rel="noopener noreferrer">View on Google Maps &#8599;</a>' +
       '</div>'
     );
     allMarkers.push({ category: cat, marker: marker });

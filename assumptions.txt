@@ -26,7 +26,8 @@ WHAT WAS CHANGED
 - main.css   : styles for the map, the filter overlay panel, the category
                chips/legend, the coloured markers and popups.
 - app.js     : NEW. Loads points.geojson, renders clustered category-coloured
-               markers, builds the filter UI, and handles geolocation.
+               markers, builds the filter UI, handles geolocation, and gives
+               every marker popup a "View on Google Maps" link.
 - points.geojson : NEW. The 388 points exported from Google My Maps, each tagged
                with a category. This is now the version-controlled source of truth.
 - tools/generate_geojson.py : NEW. Regenerates points.geojson from a KML export.
@@ -90,6 +91,15 @@ KEY ASSUMPTIONS / DECISIONS
    YOUR fork you must enable GitHub Pages on Migelo/kaltekarte.berlin and decide
    on a domain; the existing CNAME will conflict with custom-domain hosting on
    the fork. Deployment/Pages settings were intentionally left to you.
+
+7b. GOOGLE MAPS LINKS restored. Each marker popup has a "View on Google Maps"
+   link. There is no Google place_id in the source data, so the link is built as
+   a Google Maps search URL combining the business NAME with its exact
+   coordinates:
+     https://www.google.com/maps/search/?api=1&query=<name>%20<lat>,<lon>
+   This resolves to the real business listing (hours/reviews/directions) at that
+   spot in the vast majority of cases; for a few ambiguous/independent names it
+   may land on a nearby search result instead of the exact venue.
 
 8. og:image still references the old static map screenshot (map.f18ffe68.jpg).
    It is now slightly out of date but harmless; left in place.
