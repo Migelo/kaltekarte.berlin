@@ -247,11 +247,15 @@ body {
   line-height: 1;
 }
 
+/* Higher specificity than Leaflet's own `.leaflet-popup-content a` rule, which
+   would otherwise override the link colour and leave teal text on the slate
+   button (unreadable). */
+.leaflet-popup-content a.popup-link,
 .popup-link {
   display: inline-block;
   margin-top: 8px;
-  padding: 5px 10px;
-  background: #4d6a79;
+  padding: 6px 12px;
+  background: #1a73e8;
   color: #fff;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -259,8 +263,11 @@ body {
   text-decoration: none;
 }
 
+.leaflet-popup-content a.popup-link:hover,
 .popup-link:hover {
-  background: #3c5462;
+  background: #1666d0;
+  color: #fff;
+  text-decoration: none;
 }
 
 .err {
