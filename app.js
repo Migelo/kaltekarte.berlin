@@ -397,8 +397,9 @@ function loadHeatBanner() {
       var feels = Math.round(cur.apparent_temperature);
       if (feels >= 27) {
         banner.innerHTML = '\u{2744} It feels like <strong>' + feels +
-          '\u{00B0}C</strong> in Berlin \u{2014} find a cool place.';
+          '\u{00B0}C</strong> \u{2014} find a cool spot.';
         banner.hidden = false;
+        document.body.classList.add('banner-on');
       }
     })
     .catch(function () { /* offline / blocked - just stay hidden */ });
