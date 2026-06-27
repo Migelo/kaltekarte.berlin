@@ -149,7 +149,9 @@ function locateUser() {
 }
 
 function init() {
-  map = L.map('map', { zoomControl: true }).setView([52.52, 13.405], 12);
+  // Zoom control top-right so it doesn't sit under the filter panel (top-left).
+  map = L.map('map', { zoomControl: false }).setView([52.52, 13.405], 12);
+  L.control.zoom({ position: 'topright' }).addTo(map);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
