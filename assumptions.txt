@@ -66,13 +66,19 @@ KEY ASSUMPTIONS / DECISIONS
    be added later with a billing-enabled Google API key (look up each point's
    `types` and map them to categories) — say the word and I'll wire it up.
 
-3. DATA IS A SNAPSHOT.
-   points.geojson reflects the Google My Maps content as of 2026-06-27. The
-   "Add a location" button still points at the original Google Form, so NEW
-   submissions go into Google My Maps, NOT into points.geojson. There is now a
-   gap between the two. Options: (a) periodically re-export the KML and re-run
-   tools/generate_geojson.py, or (b) move the submission flow to write to the
-   GeoJSON / a small backend. For now option (a) is assumed.
+3. TWO DATA SOURCES, both flowing into the repo.
+   (a) The Google My Maps export (tools/kaltekarte.kml) is the legacy bulk
+       source, refreshed by the weekly refresh-data.yml Action.
+   (b) Community submissions: the site's "Add a location" button now drops a
+       pin on the map -> opens a prefilled GitHub issue (template
+       add-location.yml, label "new-location") -> the issue-to-pr.yml Action
+       parses it, appends to tools/extra_locations.json and opens a review PR.
+       generate_geojson.py merges BOTH sources (KML + extra_locations.json)
+       through the same validation/dedupe/categorize/enrich pipeline.
+   Requirements (configured): the fork must have Issues ENABLED (forks disable
+   them by default) and a "new-location" label (both done via API). Submitters
+   need a free GitHub account. The old link to the upstream owner's Google Form
+   was removed.
 
 4. LIBRARY VERSIONS: Leaflet 1.9.4 and leaflet.markercluster 1.5.3, loaded from
    unpkg CDN. Assumed acceptable for a no-build static site (matches the existing
