@@ -16,7 +16,7 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Download latest My Maps KML
         run: |
@@ -31,7 +31,7 @@ jobs:
         run: python3 tools/generate_geojson.py
 
       - name: Open a PR if the data changed
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: 'data: refresh from Google My Maps'
           title: 'Refresh map data from Google My Maps'
