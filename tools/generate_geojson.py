@@ -34,24 +34,32 @@ RULES = [
         "lidl", "aldi", "rewe", "edeka", "netto", "penny", "kaufland", "real",
         "bio company", "biocompany", "denn's", "denns", "biomarkt", "alnatura",
         "veganz", "supermarket", "supermarkt", "go asia", "nah und gut",
-        "ng markt", "nin hao", "kale gida", "schafer's", "schafer", "nahkauf",
+        "ng markt", "kale gida", "schafer's", "schafer", "nahkauf",
         "edeka aktiv", "ed & fred", "fleischerei", "nussdepot",
     ]),
-    ("cafe", [
-        "starbucks", "einstein kaffee", "cafe einstein", "einstein", "tchibo",
-        "coffee", "kaffee", "cafe", "cafe ", "bakery", "backerei", "baeckerei",
-        "kamps", "steinecke", "brotmeisterei", "meyerbeer", "konditorei",
-        "pastry", "what do you fancy love", "fraulein schneefeld",
+    # Order is load-bearing: bakery before restaurant before bar_cafe, so e.g.
+    # "Hard Rock Cafe" -> restaurant (not bar_cafe) and a "Baeckerei Cafe" ->
+    # bakery. The bar keywords moved here out of the old "restaurant" bucket.
+    ("bakery", [
+        "backerei", "baeckerei", "konditorei", "patisserie",
+        "brotmeisterei", "pastry", "bakery", "kamps", "steinecke",
     ]),
     ("restaurant", [
         "mcdonald", "burger king", "kentucky fried chicken", "kfc", "vapiano",
-        "hard rock cafe", "restaurant", "gyros", "sushi", "brasserie", "ryotei",
-        "esskultur", "eatery", "savour", "spagos", "mon plaisir", "madame ngo",
-        "yama", " bar", "bar ", "brauerei", "drinkery", "icebar",
-        "eiswelten", "badfish", "dirty velvet", "du beast", "vagabund",
-        "frannz", "japanisch", "good bank", "the reed", "lindner",
-        "dream baby dream", "waschkuche", "salami social", "digital eatery",
-        "mr. gyros",
+        "hard rock cafe", "restaurant", "gyros", "mr. gyros", "sushi",
+        "brasserie", "ryotei", "esskultur", "lindner", "eatery", "digital eatery",
+        "savour", "spagos", "mon plaisir", "madame ngo", "nin hao", "yama",
+        "japanisch", "good bank", "the reed",
+    ]),
+    ("bar_cafe", [
+        # cafe side (the old "cafe" bucket, minus bakeries)
+        "starbucks", "einstein kaffee", "cafe einstein", "einstein", "tchibo",
+        "coffee", "kaffee", "cafe", "cafe ", "meyerbeer",
+        "what do you fancy love", "fraulein schneefeld",
+        # bar side (moved out of "restaurant")
+        " bar", "bar ", "brauerei", "drinkery", "icebar", "eiswelten",
+        "badfish", "dirty velvet", "du beast", "vagabund", "frannz",
+        "dream baby dream", "waschkuche", "salami social",
     ]),
     ("cinema", [
         "cinemaxx", "cinestar", "cineplex", "uci kinowelt", "uci cinema",
@@ -118,8 +126,14 @@ RULES = [
 # (a gym) being tagged restaurant.
 FALLBACK_RULES = [
     ("office", ["gmbh", "co. kg", " ag", " se"]),
-    ("restaurant", ["club"]),
+    ("bar_cafe", ["club"]),
 ]
+
+# These categories are decided by the NAME rules only, never by the OSM cache:
+# the cache stored only a coarse "cafe"/"restaurant" label (not the raw OSM tag),
+# which can't tell a bar from a cafe from a bakery. OSM still supplies every
+# OTHER category and the address/hours/website fields.
+NAME_ONLY_CATEGORIES = {"cafe", "restaurant", "bar_cafe", "bakery"}
 
 
 def categorize(name: str) -> str:
@@ -153,6 +167,14 @@ def main():
     epath = os.path.join(HERE, "osm_enrichment.json")
     if os.path.exists(epath):
         enrich = json.load(open(epath, encoding="utf-8"))
+
+    # Manual category overrides (durable hand-corrections that survive KML
+    # re-exports and OSM re-runs), keyed by place name.
+    overrides = {}
+    opath = os.path.join(HERE, "overrides.json")
+    if os.path.exists(opath):
+        overrides = {norm(k): v for k, v in
+                     json.load(open(opath, encoding="utf-8")).items()}
 
     features = []
     counts = Counter()
@@ -205,9 +227,12 @@ def main():
         cat = categorize(name)
         e = enrich.get("{:.6f},{:.6f}".format(lat, lon), {})
         source = "name"
-        if e.get("category"):
-            cat = e["category"]   # confident OSM match overrides the heuristic
+        if e.get("category") and e["category"] not in NAME_ONLY_CATEGORIES:
+            cat = e["category"]   # trust OSM for non-food categories
             source = "osm"
+        if norm(name) in overrides:
+            cat = overrides[norm(name)]   # manual override wins over everything
+            source = "override"
         counts[cat] += 1
         if cat == "other":
             others.append(name)

@@ -12,8 +12,9 @@
 // the charset the server happens to label this file with.
 var CATEGORIES = [
   { key: 'supermarket', label: 'Supermarket',              color: '#2e9e3e', emoji: '\u{1F6D2}' }, // shopping cart
-  { key: 'cafe',        label: 'Caf\u{00E9} & Bakery',     color: '#b5651d', emoji: '\u{2615}' }, // hot beverage
-  { key: 'restaurant',  label: 'Restaurant & Bar',         color: '#e23b3b', emoji: '\u{1F37D}' }, // fork & knife plate
+  { key: 'bar_cafe',    label: 'Bars & Caf\u{00E9}s',      color: '#b5651d', emoji: '\u{2615}' }, // hot beverage
+  { key: 'bakery',      label: 'Bakeries',                 color: '#d98e2b', emoji: '\u{1F950}' }, // croissant
+  { key: 'restaurant',  label: 'Restaurants',              color: '#e23b3b', emoji: '\u{1F37D}' }, // fork & knife plate
   { key: 'shopping',    label: 'Shopping',                 color: '#8e44ad', emoji: '\u{1F6CD}' }, // shopping bags
   { key: 'drugstore',   label: 'Drugstore & Pharmacy',     color: '#1f8fff', emoji: '\u{1F48A}' }, // pill
   { key: 'fitness',     label: 'Fitness',                  color: '#ff8c1a', emoji: '\u{1F3CB}' }, // weight lifter

@@ -67,11 +67,14 @@ def haversine(lat1, lon1, lat2, lon2):
 def osm_category(t):
     shop = t.get("shop"); amen = t.get("amenity"); leis = t.get("leisure")
     tour = t.get("tourism"); office = t.get("office")
-    if amen == "cafe" or shop in ("bakery", "pastry", "confectionery", "coffee"):
-        return "cafe"
-    if amen in ("restaurant", "fast_food", "food_court", "biergarten", "ice_cream"):
-        return "restaurant"
-    if amen in ("bar", "pub", "nightclub"):
+    # bakeries first, so a bakery-cafe (shop=bakery + amenity=cafe) -> bakery
+    if shop in ("bakery", "pastry", "confectionery"):
+        return "bakery"
+    if amen == "cafe" or shop == "coffee":
+        return "bar_cafe"
+    if amen in ("bar", "pub", "nightclub", "biergarten"):
+        return "bar_cafe"
+    if amen in ("restaurant", "fast_food", "food_court", "ice_cream"):
         return "restaurant"
     if amen == "pharmacy" or shop in ("chemist", "drugstore"):
         return "drugstore"

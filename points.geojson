@@ -77,7 +77,7 @@
    "properties": {
     "name": "McDonald's",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Hermannplatz 2-3, 10967 Berlin",
     "hours": "Mo-Fr 00:00-03:00,09:00-24:00; Sa-Su 00:00-24:00",
     "website": "https://www.mcdonalds.de/"
@@ -242,7 +242,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -257,8 +257,8 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Pariser Platz 4A, 10117 Berlin",
     "hours": "Mo-Fr 08:00-21:00; Sa,Su 09:00-21:00",
     "website": "https://www.starbucks.de/store-locator/store/2099/pariser-platz-pariser-platz-4-a-berlin-be-10117-de"
@@ -275,8 +275,8 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 09:00-19:30"
    }
   },
@@ -323,8 +323,8 @@
    },
    "properties": {
     "name": "Telefónica Basecamp",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "office",
+    "category_source": "override",
     "address": "Mittelstraße 51-53, 10117 Berlin",
     "hours": "Mo-Fr 10:00-20:00; Sa 10:00-16:00",
     "website": "https://www.basecamp.digital"
@@ -1426,8 +1426,8 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Friedrichstraße 61, 10117 Berlin",
     "hours": "Mo-Fr 07:00-20:00; Sa 08:00-20:00; Su 09:00-19:00"
    }
@@ -1443,7 +1443,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1458,7 +1458,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1473,7 +1473,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1488,7 +1488,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1553,8 +1553,8 @@
    },
    "properties": {
     "name": "EINSTEIN KAFFEE",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "3, 10178 Berlin",
     "hours": "Mo-Su 08:00-23:00",
     "website": "https://einstein-kaffee.de/standorte/standorte-berlin/alexanderplatz/"
@@ -1571,7 +1571,7 @@
    },
    "properties": {
     "name": "EINSTEIN KAFFEE",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1586,7 +1586,7 @@
    },
    "properties": {
     "name": "Cafe Einstein",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1601,7 +1601,7 @@
    },
    "properties": {
     "name": "Einstein Kaffee",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1616,8 +1616,8 @@
    },
    "properties": {
     "name": "Einstein Kaffee",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Friedrichstraße 71",
     "hours": "Mo-Fr 07:00-20:00; Sa 09:00-20:00; Su 09:00-18:00"
    }
@@ -1633,7 +1633,7 @@
    },
    "properties": {
     "name": "EINSTEIN KAFFEE",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1648,8 +1648,8 @@
    },
    "properties": {
     "name": "Einstein Kaffee",
-    "category": "cafe",
-    "category_source": "osm"
+    "category": "bar_cafe",
+    "category_source": "name"
    }
   },
   {
@@ -1663,8 +1663,8 @@
    },
    "properties": {
     "name": "Einstein Kaffee",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "hours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-19:00",
     "website": "https://einstein-kaffee.de/standorte/standorte-berlin/gendarmenmarkt/"
    }
@@ -1680,8 +1680,8 @@
    },
    "properties": {
     "name": "EINSTEIN KAFFEE",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "hours": "Mo-Fr 07:00-20:00; PH,Sa-Su 09:00-19:00"
    }
   },
@@ -1765,7 +1765,7 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -1880,8 +1880,8 @@
    },
    "properties": {
     "name": "Badfish Bar",
-    "category": "restaurant",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Stargarder Straße 14, 10437 Berlin",
     "hours": "17:00-05:00",
     "website": "http://www.badfishbarberlin.com"
@@ -2216,7 +2216,7 @@
    },
    "properties": {
     "name": "Vagabund Brauerei",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -2231,7 +2231,7 @@
    },
    "properties": {
     "name": "Tchibo Filiale mit Kaffee Bar",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -2602,7 +2602,7 @@
    "properties": {
     "name": "Nin Hao",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Bismarckstraße 24, 10625 Berlin",
     "hours": "Mo off; Tu-Su 12:00-22:30",
     "website": "https://www.ninhaochinarestaurantberlin.de/"
@@ -2718,8 +2718,8 @@
    },
    "properties": {
     "name": "Hotel Orania.Berlin",
-    "category": "restaurant",
-    "category_source": "osm"
+    "category": "hotel",
+    "category_source": "name"
    }
   },
   {
@@ -2901,7 +2901,7 @@
    "properties": {
     "name": "Burger King",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Straße des 17. Juni 100, 10557 Berlin",
     "hours": "Mo-Th 09:00-24:00; Fr-Sa 09:00-02:00, Su 09:00-24:00",
     "website": "https://www.burgerking.de/"
@@ -3105,7 +3105,7 @@
    },
    "properties": {
     "name": "Waschküche",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -3217,8 +3217,8 @@
    },
    "properties": {
     "name": "Dream Baby Dream",
-    "category": "restaurant",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Greifswalder Straße 218, 10405 Berlin",
     "hours": "Tu-Sa 18:00-02:00,Su-Mo off"
    }
@@ -3285,8 +3285,8 @@
    },
    "properties": {
     "name": "ocelot, bookstore",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "shopping",
+    "category_source": "name",
     "address": "Brunnenstraße 181",
     "hours": "Mo-Sa 10:00-20:00"
    }
@@ -3388,7 +3388,7 @@
    },
    "properties": {
     "name": "Meyerbeer-Coffee",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -3403,8 +3403,8 @@
    },
    "properties": {
     "name": "What do you fancy love?",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Linienstraße 41, 10119 Berlin",
     "hours": "Mo-Fr 08:00-18:00; Sa 09:00-18:00; Su 10:00-18:00",
     "website": "https://www.whatdoyoufancylove.de/"
@@ -3439,7 +3439,7 @@
    },
    "properties": {
     "name": "ICEBAR - EISBAR - BAR - ANGIYOK - The Arctic Experience - Berliner Eiswelten",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -3625,8 +3625,8 @@
    },
    "properties": {
     "name": "Steinecke",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bakery",
+    "category_source": "name",
     "hours": "Mo-Fr 06:30-19:00; Sa 07:00-17:00; Su 07:00-13:00"
    }
   },
@@ -3642,7 +3642,7 @@
    "properties": {
     "name": "Mr. Gyros",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Grunewaldstraße 54, 10825 Berlin",
     "hours": "Mo-Th 11:30-22:00; Fr 11:30-23:00; Su 12:30-22:00"
    }
@@ -4399,7 +4399,7 @@
    "properties": {
     "name": "McDonald's Restaurant",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Wrangelstraße 35, 10997 Berlin",
     "hours": "Mo 00:00-01:00,09:00-01:00, Tu-Th 09:00-01:00, Fr 09:00-24:00, Sa,Su 00:00-24:00",
     "website": "https://www.mcdonalds.com/de/de-de/restaurant-suche.html/l/berlin/wrangelstrasse-35/1418"
@@ -4529,7 +4529,7 @@
    },
    "properties": {
     "name": "Du Beast",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -4594,8 +4594,8 @@
    },
    "properties": {
     "name": "Dirty Velvet Drinkery",
-    "category": "restaurant",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Lychener Straße 39, 10437 Berlin",
     "hours": "Mo-Th 18:00-24:00, Fr,Sa 17:00+, Su 18:00-11:00",
     "website": "http://www.dirtyvelvetberlin.com/"
@@ -4992,8 +4992,8 @@
    },
    "properties": {
     "name": "Starbucks",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bar_cafe",
+    "category_source": "name",
     "address": "Neue Promenade 3, 10178 Berlin",
     "hours": "Mo-Fr 07:30-21:00; Sa-Su 08:30-21:00",
     "website": "https://www.starbucks.co.uk/store-locator/53743-283045/berlin,-hackescher-markt"
@@ -5042,8 +5042,8 @@
    },
    "properties": {
     "name": "Kamps Bäckerei",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bakery",
+    "category_source": "name",
     "address": "Mühlenstraße 13, 10243 Berlin",
     "hours": "Mo-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-16:00"
    }
@@ -5060,7 +5060,7 @@
    "properties": {
     "name": "Hard Rock Cafe Berlin",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Kurfürstendamm 224, 10719 Berlin",
     "hours": "Su-Th 11:30-23:00; Fr,Sa 10:00-23:00",
     "website": "https://www.hardrockcafe.com/location/berlin/"
@@ -5093,7 +5093,7 @@
    "properties": {
     "name": "Vapiano",
     "category": "restaurant",
-    "category_source": "osm",
+    "category_source": "name",
     "address": "Rathausstraße 6, 10178 Berlin",
     "hours": "Su-Th,PH 11:00-22:00; Fr,Sa 11:00-23:00"
    }
@@ -5264,7 +5264,7 @@
    },
    "properties": {
     "name": "Salami Social Club",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -5339,7 +5339,7 @@
    },
    "properties": {
     "name": "coffee drink your monkey",
-    "category": "cafe",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -5489,7 +5489,7 @@
    },
    "properties": {
     "name": "FRANNZ Club",
-    "category": "restaurant",
+    "category": "bar_cafe",
     "category_source": "name"
    }
   },
@@ -5504,7 +5504,7 @@
    },
    "properties": {
     "name": "Steinecke Brotmeisterei",
-    "category": "cafe",
+    "category": "bakery",
     "category_source": "name"
    }
   },
@@ -6027,8 +6027,8 @@
    },
    "properties": {
     "name": "Steinecke",
-    "category": "cafe",
-    "category_source": "osm",
+    "category": "bakery",
+    "category_source": "name",
     "address": "Steinplatz 1, 10623 Berlin",
     "hours": "Mo-Fr 06:30-18:00; Sa 08:00-16:00; Su 09:00-13:00",
     "website": "https://www.steinecke.info"
