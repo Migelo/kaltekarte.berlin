@@ -6152,6 +6152,21 @@
     "hours": "Mo-Sa 07:00-21:00",
     "website": "https://www.lidl.de/"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.310645,
+     52.479493
+    ]
+   },
+   "properties": {
+    "name": "Aldi",
+    "category": "supermarket",
+    "category_source": "name"
+   }
   }
  ]
 }
