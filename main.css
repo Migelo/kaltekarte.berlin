@@ -59,6 +59,67 @@ body {
   z-index: 0;
 }
 
+/* ---- Heat banner (top-center overlay) ---- */
+
+#heat-banner {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  max-width: calc(100% - 320px);
+  background: #e23b3b;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- Nearest button (floating, bottom-right) ---- */
+
+#locate-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 78px;
+  z-index: 1000;
+  background: #1f6feb;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+#locate-btn:hover {
+  background: #1a5fd0;
+}
+
+/* ---- Toast (bottom-center) ---- */
+
+#toast {
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1200;
+  background: rgba(33, 37, 41, 0.95);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 9px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  max-width: calc(100% - 24px);
+  text-align: center;
+}
+
 /* ---- Filter panel (overlay on top of the map) ---- */
 
 #filters {
@@ -268,6 +329,34 @@ body {
   background: #1666d0;
   color: #fff;
   text-decoration: none;
+}
+
+.popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.popup-links .popup-link {
+  margin-top: 0;
+}
+
+.leaflet-popup-content a.popup-link-walk,
+.popup-link-walk {
+  background: #2e9e3e;
+}
+
+.leaflet-popup-content a.popup-link-walk:hover,
+.popup-link-walk:hover {
+  background: #268235;
+}
+
+.popup-dist {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1f6feb;
 }
 
 .err {

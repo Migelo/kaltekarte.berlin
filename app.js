@@ -34,8 +34,10 @@ var active = {};
 CATEGORIES.forEach(function (c) { active[c.key] = true; });
 
 var map, cluster;
-var allMarkers = [];      // [{ category, marker }]
+var allMarkers = [];      // [{ category, marker, name, lat, lon, id }]
 var counts = {};          // category -> number of points
+var userLatLng = null;    // set once geolocation succeeds
+var userMarker = null;    // "you are here" marker
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, function (ch) {
@@ -113,39 +115,119 @@ function buildFilterUI() {
 }
 
 function addPoints(geojson) {
-  geojson.features.forEach(function (f) {
+  geojson.features.forEach(function (f, idx) {
     var cat = (f.properties && f.properties.category) || 'other';
     if (!CATEGORY_BY_KEY[cat]) cat = 'other';
     counts[cat] = (counts[cat] || 0) + 1;
     var coords = f.geometry.coordinates; // [lon, lat]
     var lat = coords[1], lon = coords[0];
+    var name = f.properties.name;
     var marker = L.marker([lat, lon], { icon: markerIcon(cat) });
     var c = CATEGORY_BY_KEY[cat];
+    var walkUrl = 'https://www.google.com/maps/dir/?api=1&destination=' +
+      lat + ',' + lon + '&travelmode=walking';
     marker.bindPopup(
       '<div class="popup">' +
-      '<strong>' + escapeHtml(f.properties.name) + '</strong>' +
+      '<strong>' + escapeHtml(name) + '</strong>' +
       '<div class="popup-cat"><span class="dot" style="background:' + c.color + '"><span class="ic">' +
       c.emoji + '</span></span>' + c.label + '</div>' +
-      '<a class="popup-link" href="' + gmapsUrl(f.properties.name, lat, lon) +
+      '<div class="popup-dist" hidden></div>' +
+      '<div class="popup-links">' +
+      '<a class="popup-link" href="' + gmapsUrl(name, lat, lon) +
       '" target="_blank" rel="noopener noreferrer">View on Google Maps &#8599;</a>' +
+      '<a class="popup-link popup-link-walk" href="' + walkUrl +
+      '" target="_blank" rel="noopener noreferrer">Walk here &#8599;</a>' +
+      '</div>' +
       '</div>'
     );
-    allMarkers.push({ category: cat, marker: marker });
+    allMarkers.push({ category: cat, marker: marker, name: name, lat: lat, lon: lon, id: idx });
   });
 }
 
-function locateUser() {
-  if (!navigator.geolocation) return;
-  navigator.geolocation.getCurrentPosition(function (position) {
-    var lat = position.coords.latitude, lon = position.coords.longitude;
-    // Only recenter if the user is somewhere near Berlin.
-    if (lat > 52.0 && lat < 53.0 && lon > 12.8 && lon < 13.9) {
-      map.setView([lat, lon], 14);
-    }
-    L.circleMarker([lat, lon], {
+function setUserLocation(lat, lon) {
+  userLatLng = L.latLng(lat, lon);
+  if (userMarker) {
+    userMarker.setLatLng(userLatLng);
+  } else {
+    userMarker = L.circleMarker(userLatLng, {
       radius: 8, color: '#1f6feb', weight: 3, fillColor: '#1f6feb', fillOpacity: 0.4
     }).addTo(map).bindPopup('You are here');
-  }, function () { /* permission denied - ignore */ });
+  }
+}
+
+// Ask the browser for location once and cache it. cb(latlng) on success,
+// cbErr(reason) on failure.
+function requestLocation(cb, cbErr) {
+  if (userLatLng) { if (cb) cb(userLatLng); return; }
+  if (!navigator.geolocation) { if (cbErr) cbErr('no-geo'); return; }
+  navigator.geolocation.getCurrentPosition(function (pos) {
+    setUserLocation(pos.coords.latitude, pos.coords.longitude);
+    if (cb) cb(userLatLng);
+  }, function () { if (cbErr) cbErr('denied'); },
+     { enableHighAccuracy: false, timeout: 8000, maximumAge: 60000 });
+}
+
+// On load: locate silently and recenter only if the user is near Berlin.
+function autoLocate() {
+  requestLocation(function (ll) {
+    if (ll.lat > 52.0 && ll.lat < 53.0 && ll.lng > 12.8 && ll.lng < 13.9) {
+      map.setView(ll, 14);
+    }
+  });
+}
+
+// Straight-line distance + rough walking time (~5 km/h).
+function formatDistance(metres) {
+  var mins = Math.max(1, Math.round(metres / 83));
+  var dist = metres < 1000
+    ? Math.round(metres / 10) * 10 + ' m'
+    : (metres / 1000).toFixed(1) + ' km';
+  return dist + ' \u{00B7} ~' + mins + ' min walk';
+}
+
+// Fly to the closest currently-visible (filter-respecting) place and open it.
+function findNearest() {
+  requestLocation(function (ll) {
+    var best = null, bestD = Infinity;
+    for (var i = 0; i < allMarkers.length; i++) {
+      var m = allMarkers[i];
+      if (!active[m.category]) continue;
+      var dd = map.distance(ll, m.marker.getLatLng());
+      if (dd < bestD) { bestD = dd; best = m; }
+    }
+    if (!best) { toast('No places match the current filters.'); return; }
+    cluster.zoomToShowLayer(best.marker, function () { best.marker.openPopup(); });
+  }, function (reason) {
+    toast(reason === 'denied' ? 'Location permission denied.' : 'Location unavailable.');
+  });
+}
+
+function toast(msg) {
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.hidden = false;
+  clearTimeout(toast._t);
+  toast._t = setTimeout(function () { t.hidden = true; }, 3200);
+}
+
+// Open-Meteo current temperature (free, keyless). Show a nudge on hot days only.
+function loadHeatBanner() {
+  var banner = document.getElementById('heat-banner');
+  if (!banner) return;
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.405&current=temperature_2m,apparent_temperature')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var cur = data && data.current;
+      if (!cur || typeof cur.apparent_temperature !== 'number') return;
+      var feels = Math.round(cur.apparent_temperature);
+      if (feels >= 27) {
+        banner.innerHTML = '\u{2744} It feels like <strong>' + feels +
+          '\u{00B0}C</strong> in Berlin \u{2014} find a cool place.';
+        banner.hidden = false;
+      }
+    })
+    .catch(function () { /* offline / blocked - just stay hidden */ });
 }
 
 function init() {
@@ -165,13 +247,29 @@ function init() {
   });
   map.addLayer(cluster);
 
+  // Inject distance/walk-time into a popup when it opens (once located).
+  map.on('popupopen', function (e) {
+    var src = e.popup._source;
+    if (!src || !userLatLng) return;
+    var el = e.popup.getElement();
+    var node = el && el.querySelector('.popup-dist');
+    if (!node) return;
+    node.textContent = formatDistance(map.distance(userLatLng, src.getLatLng()));
+    node.hidden = false;
+  });
+
+  var locateBtn = document.getElementById('locate-btn');
+  if (locateBtn) locateBtn.addEventListener('click', findNearest);
+
+  loadHeatBanner();
+
   fetch('points.geojson')
     .then(function (r) { return r.json(); })
     .then(function (geojson) {
       addPoints(geojson);
       buildFilterUI();
       rebuild();
-      locateUser();
+      autoLocate();
     })
     .catch(function (err) {
       console.error('Failed to load points.geojson', err);
