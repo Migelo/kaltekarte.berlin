@@ -47,7 +47,7 @@ RULES = [
         "mcdonald", "burger king", "kentucky fried chicken", "kfc", "vapiano",
         "hard rock cafe", "restaurant", "gyros", "sushi", "brasserie", "ryotei",
         "esskultur", "eatery", "savour", "spagos", "mon plaisir", "madame ngo",
-        "yama", " bar", "bar ", "brauerei", "club", "drinkery", "icebar",
+        "yama", " bar", "bar ", "brauerei", "drinkery", "icebar",
         "eiswelten", "badfish", "dirty velvet", "du beast", "vagabund",
         "frannz", "japanisch", "good bank", "the reed", "lindner",
         "dream baby dream", "waschkuche", "salami social", "digital eatery",
@@ -87,7 +87,7 @@ RULES = [
         "microsoft", "delivery hero", "getyourguide", "groupon", "kayak",
         "cognizant", "talent.io", "mhp lab", "c3 creative", "telefonica",
         "basecamp", "headquarters", "recruitment", "technology center",
-        "quartier zukunft", "gmbh", "co. kg", " ag", " se", "targobank",
+        "quartier zukunft", "targobank",
         "deutsche bank", "creative code",
     ]),
     ("shopping", [
@@ -112,45 +112,102 @@ RULES = [
 ]
 
 
+# Generic, greedy keywords (legal suffixes, "club") that should decide a category
+# ONLY when no specific brand/keyword above matched. Checking these last stops
+# e.g. "KiK ... GmbH" (a shop) being tagged office, or "JOHN REED Women's Club"
+# (a gym) being tagged restaurant.
+FALLBACK_RULES = [
+    ("office", ["gmbh", "co. kg", " ag", " se"]),
+    ("restaurant", ["club"]),
+]
+
+
 def categorize(name: str) -> str:
     n = norm(name)
     for cat, keys in RULES:
         for k in keys:
             if k in n:
                 return cat
+    for cat, keys in FALLBACK_RULES:
+        for k in keys:
+            if k in n:
+                return cat
     return "other"
 
 
+# Generous Berlin bounding box. Anything outside is bad data (e.g. the source
+# once contained a point in Boulder, Colorado).
+LAT_MIN, LAT_MAX = 52.25, 52.75
+LON_MIN, LON_MAX = 13.00, 13.85
+
+
 def main():
+    from collections import Counter
+
     kml = open(KML, encoding="utf-8").read()
     placemarks = re.findall(r"<Placemark>(.*?)</Placemark>", kml, re.S)
+
     features = []
-    from collections import Counter
     counts = Counter()
     others = []
+    rejected = []   # outside Berlin / unparseable
+    dupes = []      # exact (name, coordinate) repeats
+    seen = set()
+
     for pm in placemarks:
-        name = re.search(r"<name>(.*?)</name>", pm, re.S).group(1)
-        name = name.replace("<![CDATA[", "").replace("]]>", "").strip()
-        coords = re.search(r"<coordinates>(.*?)</coordinates>", pm, re.S).group(1).strip()
-        lon, lat = coords.split(",")[0:2]
+        nm = re.search(r"<name>(.*?)</name>", pm, re.S)
+        co = re.search(r"<coordinates>(.*?)</coordinates>", pm, re.S)
+        if not nm or not co:
+            rejected.append(("<missing name or coordinates>", ""))
+            continue
+        name = nm.group(1).replace("<![CDATA[", "").replace("]]>", "").strip()
+        try:
+            lon, lat = (float(x) for x in co.group(1).strip().split(",")[0:2])
+        except (ValueError, IndexError):
+            rejected.append((name, co.group(1).strip()))
+            continue
+        if not (LAT_MIN <= lat <= LAT_MAX and LON_MIN <= lon <= LON_MAX):
+            rejected.append((name, f"{lat},{lon}"))
+            continue
+
+        lon, lat = round(lon, 6), round(lat, 6)
+        key = (norm(name), lon, lat)
+        if key in seen:
+            dupes.append(name)
+            continue
+        seen.add(key)
+
         cat = categorize(name)
         counts[cat] += 1
         if cat == "other":
             others.append(name)
         features.append({
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [round(float(lon), 6), round(float(lat), 6)]},
+            "geometry": {"type": "Point", "coordinates": [lon, lat]},
             "properties": {"name": name, "category": cat},
         })
+
+    # Safety net: refuse to overwrite good data with a broken/empty fetch.
+    if len(features) < 300:
+        raise SystemExit(
+            f"Only {len(features)} valid features parsed (<300); refusing to "
+            f"overwrite {OUT}. Check the KML export."
+        )
 
     geojson = {"type": "FeatureCollection", "features": features}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(geojson, f, ensure_ascii=False, indent=1)
 
-    print(f"wrote {len(features)} features to {OUT}")
+    print(f"wrote {len(features)} features to {OUT}  ({len(placemarks)} placemarks in source)")
     print("\n=== category counts ===")
     for cat, c in counts.most_common():
         print(f"{c:4d}  {cat}")
+    print(f"\n=== {len(rejected)} rejected (outside Berlin / unparseable) ===")
+    for name, info in rejected:
+        print(f"    {name}  [{info}]")
+    print(f"\n=== {len(dupes)} duplicates dropped ===")
+    for d in dupes:
+        print("   ", d)
     print(f"\n=== {len(others)} 'other' (uncategorized) ===")
     for o in others:
         print("   ", o)

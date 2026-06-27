@@ -342,34 +342,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     13.444247,
-     52.504178
-    ]
-   },
-   "properties": {
-    "name": "Zalando SE",
-    "category": "office"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     13.415943,
-     52.526349
-    ]
-   },
-   "properties": {
-    "name": "Zalando Tech Headquarters BMO",
-    "category": "office"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      13.392699,
      52.506655
     ]
@@ -713,20 +685,6 @@
    "properties": {
     "name": "Uniqlo",
     "category": "shopping"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     13.39132,
-     52.500058
-    ]
-   },
-   "properties": {
-    "name": "EDEKA",
-    "category": "supermarket"
    }
   },
   {
@@ -2630,7 +2588,7 @@
    },
    "properties": {
     "name": "JOHN REED Women's Club",
-    "category": "restaurant"
+    "category": "fitness"
    }
   },
   {
@@ -2644,7 +2602,7 @@
    },
    "properties": {
     "name": "JOHN REED Women's Club",
-    "category": "restaurant"
+    "category": "fitness"
    }
   },
   {
@@ -3428,7 +3386,7 @@
    },
    "properties": {
     "name": "HELLWEG - Die Profi-Baumärkte GmbH & Co. KG",
-    "category": "office"
+    "category": "shopping"
    }
   },
   {
@@ -4086,7 +4044,7 @@
    },
    "properties": {
     "name": "HUMANA Secondhand & Vintage",
-    "category": "office"
+    "category": "shopping"
    }
   },
   {
@@ -4114,20 +4072,6 @@
    },
    "properties": {
     "name": "PENNY-Markt Discounter",
-    "category": "supermarket"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     13.384363,
-     52.456466
-    ]
-   },
-   "properties": {
-    "name": "Lidl",
     "category": "supermarket"
    }
   },
@@ -4311,20 +4255,6 @@
    "properties": {
     "name": "Eckert",
     "category": "other"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -105.283404,
-     40.016835
-    ]
-   },
-   "properties": {
-    "name": "Cognizant Quick Left",
-    "category": "office"
    }
   },
   {
@@ -4660,7 +4590,7 @@
    },
    "properties": {
     "name": "KiK Textilien und Non-Food GmbH",
-    "category": "office"
+    "category": "shopping"
    }
   },
   {
