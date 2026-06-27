@@ -554,13 +554,13 @@ body {
   margin-top: 0;
 }
 
-.leaflet-popup-content a.popup-link-walk,
-.popup-link-walk {
+.leaflet-popup-content a.popup-link-cycle,
+.popup-link-cycle {
   background: #2e9e3e;
 }
 
-.leaflet-popup-content a.popup-link-walk:hover,
-.popup-link-walk:hover {
+.leaflet-popup-content a.popup-link-cycle:hover,
+.popup-link-cycle:hover {
   background: #268235;
 }
 

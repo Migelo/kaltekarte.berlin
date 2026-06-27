@@ -266,8 +266,8 @@ function addPoints(geojson) {
     var name = p.name;
     var marker = L.marker([lat, lon], { icon: markerIcon(cat) });
     var c = CATEGORY_BY_KEY[cat];
-    var walkUrl = 'https://www.google.com/maps/dir/?api=1&destination=' +
-      lat + ',' + lon + '&travelmode=walking';
+    var cycleUrl = 'https://www.google.com/maps/dir/?api=1&destination=' +
+      lat + ',' + lon + '&travelmode=bicycling';
 
     // Optional OSM-enriched fields.
     var meta = '';
@@ -290,8 +290,8 @@ function addPoints(geojson) {
       '<div class="popup-links">' +
       '<a class="popup-link" href="' + gmapsUrl(name, lat, lon) +
       '" target="_blank" rel="noopener noreferrer">View on Google Maps &#8599;</a>' +
-      '<a class="popup-link popup-link-walk" href="' + walkUrl +
-      '" target="_blank" rel="noopener noreferrer">Walk here &#8599;</a>' +
+      '<a class="popup-link popup-link-cycle" href="' + cycleUrl +
+      '" target="_blank" rel="noopener noreferrer">Cycle here &#8599;</a>' +
       webLink +
       '</div>' +
       '</div>'
@@ -334,13 +334,13 @@ function autoLocate(recenter) {
   });
 }
 
-// Straight-line distance + rough walking time (~5 km/h).
+// Straight-line distance + rough cycling time (~15 km/h).
 function formatDistance(metres) {
-  var mins = Math.max(1, Math.round(metres / 83));
+  var mins = Math.max(1, Math.round(metres / 250));
   var dist = metres < 1000
     ? Math.round(metres / 10) * 10 + ' m'
     : (metres / 1000).toFixed(1) + ' km';
-  return dist + ' \u{00B7} ~' + mins + ' min walk';
+  return dist + ' \u{00B7} ~' + mins + ' min cycle';
 }
 
 // Fly to the closest currently-visible (filter-respecting) place and open it.
@@ -405,7 +405,7 @@ function init() {
   });
   map.addLayer(cluster);
 
-  // Inject distance/walk-time into a popup when it opens (once located).
+  // Inject distance/cycle-time into a popup when it opens (once located).
   map.on('popupopen', function (e) {
     var src = e.popup._source;
     if (!src || !userLatLng) return;

@@ -141,11 +141,11 @@ A. DATA FIXES (tools/generate_geojson.py)
 
 B. HEAT-RELIEF
    - "Nearest" button flies to the closest filter-respecting place.
-   - Popups show straight-line distance + rough walk time once located, plus a
-     "Walk here" Google Maps walking-directions link.
+   - Popups show straight-line distance + rough cycle time (~15 km/h) once
+     located, plus a "Cycle here" Google Maps cycling-directions link.
    - Heat banner shows the live Open-Meteo "feels like" temperature on hot days
      (>=27C). Open-Meteo is free/keyless; fails silently when offline.
-   - Distances/walk-times are straight-line (labelled "~"), not routed.
+   - Distances/cycle-times are straight-line (labelled "~"), not routed.
 
 C. SEARCH & DISCOVERY
    - Instant client-side name search; live "N / total" count.
