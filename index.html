@@ -75,6 +75,22 @@
 
     <div id="toast" hidden></div>
 
+    <div id="add-bar" hidden>
+      <span>Tap the map where the cool place is &#8212; you can drag the pin to fine-tune.</span>
+      <button type="button" id="add-cancel">Cancel</button>
+    </div>
+
+    <div id="add-form" hidden>
+      <strong>New location</strong>
+      <input type="text" id="add-name" placeholder="Place name (e.g. REWE City)" autocomplete="off" />
+      <div class="add-coords-row"><span class="add-coords-label">Pin:</span> <span id="add-coords"></span></div>
+      <div class="add-actions">
+        <button type="button" id="add-submit">Create submission &#8599;</button>
+        <button type="button" id="add-form-cancel">Cancel</button>
+      </div>
+      <p class="add-hint">Opens a prefilled GitHub issue (needs a free GitHub account). A maintainer reviews it before it appears on the map.</p>
+    </div>
+
     <div id="filters" aria-label="Filter locations by category">
       <div id="filter-head">
         <strong class="filter-title">Filter</strong>
@@ -113,9 +129,9 @@
     </div>
 
     <footer id="buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScgFQNGZXAQaq0lIyHrB8Uxi9EQhOyE0KoQAiGTopB87YlGnA/viewform?usp=sf_link" target="_blank" class="button" id="add-button">
+      <button type="button" class="button" id="add-button">
         Add a location
-      </a>
+      </button>
 
       <a href="https://twitter.com/jessepinho/status/1024265096657350657" target="_blank" class="button" id="twitter-button">
         A @jessepinho project

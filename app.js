@@ -39,6 +39,12 @@ var counts = {};          // category -> number of points
 var userLatLng = null;    // set once geolocation succeeds
 var userMarker = null;    // "you are here" marker
 var query = '';           // current text search (lowercased)
+var addMode = false;      // "Add a location" pin-drop mode
+var addMarker = null;     // the draggable submission pin
+
+// Where community submissions go: a prefilled GitHub issue (the issue-to-pr
+// Action turns it into a review PR).
+var ISSUE_BASE = 'https://github.com/Migelo/kaltekarte.berlin/issues/new';
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, function (ch) {
@@ -398,6 +404,75 @@ function loadHeatBanner() {
     .catch(function () { /* offline / blocked - just stay hidden */ });
 }
 
+// ---- "Add a location": drop a pin, then open a prefilled GitHub issue ----
+
+function addPinIcon() {
+  return L.divIcon({
+    className: '',
+    html: '<div class="add-pin"></div>',
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+  });
+}
+
+function updateAddCoords() {
+  if (!addMarker) return;
+  var ll = addMarker.getLatLng();
+  var el = document.getElementById('add-coords');
+  if (el) el.textContent = ll.lat.toFixed(6) + ', ' + ll.lng.toFixed(6);
+}
+
+function placeAddPin(e) {
+  if (addMarker) {
+    addMarker.setLatLng(e.latlng);
+  } else {
+    addMarker = L.marker(e.latlng, { draggable: true, icon: addPinIcon() }).addTo(map);
+    addMarker.on('dragend', updateAddCoords);
+  }
+  document.getElementById('add-bar').hidden = true;
+  document.getElementById('add-form').hidden = false;
+  updateAddCoords();
+  var name = document.getElementById('add-name');
+  if (name) name.focus();
+}
+
+function startAddLocation() {
+  if (addMode) return;
+  addMode = true;
+  document.getElementById('add-bar').hidden = false;
+  document.getElementById('add-form').hidden = true;
+  var name = document.getElementById('add-name');
+  if (name) name.value = '';
+  map.getContainer().style.cursor = 'crosshair';
+  map.on('click', placeAddPin);
+}
+
+function cancelAddLocation() {
+  addMode = false;
+  map.off('click', placeAddPin);
+  if (addMarker) { map.removeLayer(addMarker); addMarker = null; }
+  map.getContainer().style.cursor = '';
+  var bar = document.getElementById('add-bar');
+  var form = document.getElementById('add-form');
+  if (bar) bar.hidden = true;
+  if (form) form.hidden = true;
+}
+
+function submitAddLocation() {
+  if (!addMarker) return;
+  var nameEl = document.getElementById('add-name');
+  var name = (nameEl.value || '').trim();
+  if (!name) { nameEl.focus(); toast('Please enter a place name.'); return; }
+  var ll = addMarker.getLatLng();
+  var coords = ll.lat.toFixed(6) + ',' + ll.lng.toFixed(6);
+  var url = ISSUE_BASE + '?template=add-location.yml' +
+    '&title=' + encodeURIComponent('Add location: ' + name) +
+    '&place-name=' + encodeURIComponent(name) +
+    '&coordinates=' + encodeURIComponent(coords);
+  window.open(url, '_blank', 'noopener');
+  cancelAddLocation();
+}
+
 function init() {
   // Zoom control top-right so it doesn't sit under the filter panel (top-left).
   map = L.map('map', { zoomControl: false }).setView([52.52, 13.405], 12);
@@ -431,6 +506,15 @@ function init() {
 
   var locateMeBtn = document.getElementById('locate-me-btn');
   if (locateMeBtn) locateMeBtn.addEventListener('click', locateMe);
+
+  var addBtn = document.getElementById('add-button');
+  if (addBtn) addBtn.addEventListener('click', startAddLocation);
+  var addCancel = document.getElementById('add-cancel');
+  if (addCancel) addCancel.addEventListener('click', cancelAddLocation);
+  var addFormCancel = document.getElementById('add-form-cancel');
+  if (addFormCancel) addFormCancel.addEventListener('click', cancelAddLocation);
+  var addSubmit = document.getElementById('add-submit');
+  if (addSubmit) addSubmit.addEventListener('click', submitAddLocation);
 
   loadHeatBanner();
   initDiscovery();

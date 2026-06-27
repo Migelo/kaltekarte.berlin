@@ -616,6 +616,142 @@ body {
   font-size: 0.85rem;
 }
 
+/* ---- Add-a-location flow ---- */
+
+#add-button {
+  flex-grow: 1;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#add-bar[hidden],
+#add-form[hidden] {
+  display: none;
+}
+
+#add-bar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 380px;
+  max-width: calc(100% - 24px);
+  background: #1f6feb;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 8px 8px 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#add-bar button {
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 4px 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#add-form {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1400;
+  width: 320px;
+  max-width: calc(100% - 24px);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#add-form strong {
+  color: #2c3e50;
+}
+
+#add-name {
+  padding: 8px 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  font: inherit;
+  outline: none;
+}
+
+#add-name:focus {
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 2px rgba(31, 111, 235, 0.2);
+}
+
+.add-coords-row {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.add-coords-label {
+  font-weight: 700;
+}
+
+.add-actions {
+  display: flex;
+  gap: 8px;
+}
+
+#add-submit {
+  flex: 1;
+  background: #2e9e3e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#add-submit:hover {
+  background: #268235;
+}
+
+#add-form-cancel {
+  background: #eee;
+  color: #444;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-hint {
+  font-size: 0.72rem;
+  color: #888;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.add-pin {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e23b3b;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 600px) {
   #filters {
     width: 230px;
