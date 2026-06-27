@@ -1,0 +1,1049 @@
+{
+ "52.411237,13.262542": {
+  "address": "Ladiusstraße 26, 14165 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/meinkaufsbox/markt/marktinfo.html?marketId=4040128"
+ },
+ "52.414826,13.425714": {
+  "address": "Warmensteinacher Straße 57, 12349 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/filialen/berlin-neukoelln/buckow-warmensteinacher-str-57.html"
+ },
+ "52.426278,13.434251": {
+  "address": "Buckower Damm 194, 12349 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/"
+ },
+ "52.430836,13.531868": {
+  "address": "Rudower Chaussee 26, 12489 Berlin",
+  "match_score": 0.5,
+  "website": "https://www.esz.hu-berlin.de/"
+ },
+ "52.435176,13.343232": {
+  "address": "Kaiser-Wilhelm-Straße 64, 12247 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 0.5,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-hadersbeck-kaiser-wilhelm-str.-64/index.jsp"
+ },
+ "52.438323,13.548320": {
+  "address": "Dörpfeldstraße 46, 12489 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 07:00-24:00; Sa 07:00-23:30",
+  "match_score": 0.5,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-d%C3%B6rpfeldstra%C3%9Fe-d%C3%B6rpfeldstr.-46/"
+ },
+ "52.439403,13.436737": {
+  "address": "Gutschmidtstraße 101, 12359",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0
+ },
+ "52.439994,13.434341": {
+  "address": "Buckower Damm 50, 12349 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00; Su,PH off",
+  "match_score": 0.5,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/buckower-damm-50/3180998"
+ },
+ "52.440208,13.433967": {
+  "address": "Buckower Damm 50, 12349 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 07:00-24:00; Sa 07:00-23:30; Su,PH off",
+  "match_score": 1.0
+ },
+ "52.446162,13.564188": {
+  "address": "Oberspreestraße 145, 12555 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 06:00-24:00; Sa 06:00-23:30; PH off",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/berlin-koepenick/1931108/rewe-markt-oberspreestr-145/"
+ },
+ "52.455587,13.385891": {
+  "category": "shopping",
+  "match_score": 1.0
+ },
+ "52.457001,13.436397": {
+  "address": "Britzer Damm 60, 12347 Berlin",
+  "category": "gas_station",
+  "hours": "24/7",
+  "match_score": 0.5
+ },
+ "52.458160,13.577502": {
+  "address": "Bahnhofstraße 33-38, 12555 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00; PH off; Su 13:00-18:00 \"nur wenn verkaufsoffen\"",
+  "match_score": 1.0,
+  "website": "https://www.forum-koepenick.de/"
+ },
+ "52.462587,13.324748": {
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00; PH,Su off",
+  "match_score": 1.0,
+  "website": "https://boulevard-berlin.klepierre.de/"
+ },
+ "52.465596,13.327696": {
+  "address": "Walther-Schreiber-Platz 1, 12161 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 0.5,
+  "website": "https://www.schloss-strassen-center.de/"
+ },
+ "52.469807,13.333067": {
+  "address": "Rheinstraße 14, 12159 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:00-23:30",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/angebote/berlin-friedenau/4040239/rewe-markt-rheinstr-14/"
+ },
+ "52.471821,13.479817": {
+  "address": "Eichbuschallee 57, 12437 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-20:00",
+  "match_score": 1.0,
+  "website": "https://www.netto.de"
+ },
+ "52.476969,13.426072": {
+  "address": "Hermannstraße 55, 12049",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/filialen/berlin-neukoelln/neukoelln-hermannstr-55.html"
+ },
+ "52.478210,13.425625": {
+  "address": "Hermannstraße 49, 12049 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Sa 08:00-21:00; Su,PH off",
+  "match_score": 0.5,
+  "website": "https://www.rossmann.de/de/filialen/berlin/berlin/hermannstrasse-49.html"
+ },
+ "52.478623,13.451053": {
+  "address": "Thiemannstraße 9-11, 12059 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/rewe-markt-berlin-neuk%C3%B6lln-thiemannstra%C3%9Fe-9-11"
+ },
+ "52.479166,13.437899": {
+  "address": "Karl-Marx-Straße 107, 12043 Berlin",
+  "match_score": 1.0,
+  "website": "https://www.die-deutschule.de"
+ },
+ "52.479731,13.326859": {
+  "address": "Mainzer Straße 13, 10715 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 08:00-19:00; Sa 08:00-18:00; Su off",
+  "match_score": 1.0
+ },
+ "52.479817,13.435744": {
+  "address": "Karl-Marx-Straße 92-98, 12043 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 0.5,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/karl-marx-strasse-92-98/3181900"
+ },
+ "52.480906,13.384909": {
+  "address": "Tempelhofer Damm 24, 12101 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:30-22:00",
+  "match_score": 1.0
+ },
+ "52.481382,13.434076": {
+  "category": "transport",
+  "match_score": 0.5,
+  "website": "https://fahrinfo.vbb.de/bin/stboard.exe/dn?start=yes&input=900078102"
+ },
+ "52.482057,13.431607": {
+  "address": "Karl-Marx-Straße 66, 12043 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://filiale.kaufland.de/service/filiale.storeName=DE7300.html"
+ },
+ "52.484518,13.433729": {
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 0.67
+ },
+ "52.485146,13.382949": {
+  "address": "Dudenstraße 18-20, 10965 Berlin",
+  "category": "culture",
+  "hours": "Mo, Tu 13:00-19:00; We 11:00-17:00; Th 13:00-19:00; Fr 11:00-19:00; Sa 11:00-16:00",
+  "match_score": 0.67,
+  "website": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/stadtteilbibliothek-friedrich-von-raumer/"
+ },
+ "52.485192,13.433712": {
+  "address": "Sonnenallee 57, 12045 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin-Neukoelln/Sonnenallee-57/7429/"
+ },
+ "52.485363,13.372336": {
+  "address": "Dudenstraße 90, 10965 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/"
+ },
+ "52.486529,13.421516": {
+  "address": "Hasenheide 107-108, 10967 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 0.5,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-fiebig-hasenheide-107-108/index.jsp"
+ },
+ "52.486645,13.424933": {
+  "address": "Hermannplatz 2-3, 10967 Berlin",
+  "category": "restaurant",
+  "hours": "Mo-Fr 00:00-03:00,09:00-24:00; Sa-Su 00:00-24:00",
+  "match_score": 1.0,
+  "website": "https://www.mcdonalds.de/"
+ },
+ "52.486758,13.355622": {
+  "address": "Akazienstraße 3a, 10823 Berlin",
+  "hours": "Mo-Fr 09:00-17:00",
+  "match_score": 0.67,
+  "website": "https://space-shack.com/"
+ },
+ "52.486789,13.325535": {
+  "address": "Berliner Straße 25, 10715 Berlin",
+  "category": "supermarket",
+  "hours": "Mo 07:00-24:00; Tu-Fr 00:00-24:00; Sa 00:00-23:00",
+  "match_score": 1.0,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-berliner-straße-berliner-str.-24-25/index.jsp"
+ },
+ "52.488169,13.337708": {
+  "address": "Grunewaldstraße 54, 10825 Berlin",
+  "category": "restaurant",
+  "hours": "Mo-Th 11:30-22:00; Fr 11:30-23:00; Su 12:30-22:00",
+  "match_score": 1.0
+ },
+ "52.489671,13.388931": {
+  "address": "Bergmannstraße 5, 10961 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00; PH off",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin-Kreuzberg/Bergmannstr-5/7760/"
+ },
+ "52.489840,13.374958": {
+  "address": "Kreuzbergstraße 40, 10965 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/filialen/berlin-tempelhof-schoeneberg/schoeneberg-kreuzbergstr-40.html"
+ },
+ "52.491178,13.386527": {
+  "category": "cafe",
+  "hours": "Mo-Fr 06:30-19:00; Sa 07:00-17:00; Su 07:00-13:00",
+  "match_score": 1.0
+ },
+ "52.491572,13.422705": {
+  "address": "Kottbusser Damm 20, 10967 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Fr 09:00-21:00; Sa 09:00-21:00; Su off; PH off",
+  "match_score": 0.5,
+  "website": "https://www.rossmann.de"
+ },
+ "52.492140,13.431100": {
+  "address": "Maybachufer 32-33, 12047 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0
+ },
+ "52.492927,13.371611": {
+  "address": "Yorckstraße 35-42, 10965 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00; PH off",
+  "match_score": 0.67,
+  "website": "https://www.biocompany.de/bio-company-markt-finden/l/berlin/yorckstrasse-37/501512"
+ },
+ "52.495400,13.420230": {
+  "address": "Kottbusser Damm 1, 10967 Berlin",
+  "category": "fitness",
+  "hours": "Mo-Su 06:00-00:00",
+  "match_score": 1.0,
+  "website": "https://johnreed.fitness/club-berlin-kreuzberg"
+ },
+ "52.496506,13.292520": {
+  "address": "Westfälische Straße 51, 10711 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Th 10:00-17:00; Sa 08:00-13:30; Fr 08:30-18:00",
+  "match_score": 0.5
+ },
+ "52.496827,13.419941": {
+  "address": "Kottbusser Straße 16a, 10999 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "http://www.lidl.de"
+ },
+ "52.498734,13.312088": {
+  "address": "Konstanzer Straße 2, 10707 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 1.0
+ },
+ "52.499342,13.418747": {
+  "address": "Skalitzer Straße 134, 10999 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 07:00-00:00; Sa 07:00-23:30",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/berlin-kreuzberg/1931140/rewe-markt-skalitzer-str-134/"
+ },
+ "52.500170,13.388230": {
+  "address": "Wilhelmstraße 141, 10963 Berlin",
+  "category": "office",
+  "match_score": 1.0,
+  "website": "https://www.willy-brandt-haus.de/"
+ },
+ "52.500382,13.465339": {
+  "address": "Markgrafendamm 25C, 10245 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0
+ },
+ "52.500681,13.436256": {
+  "address": "Wrangelstraße 35, 10997 Berlin",
+  "category": "restaurant",
+  "hours": "Mo 00:00-01:00,09:00-01:00, Tu-Th 09:00-01:00, Fr 09:00-24:00, Sa,Su 00:00-24:00",
+  "match_score": 0.5,
+  "website": "https://www.mcdonalds.com/de/de-de/restaurant-suche.html/l/berlin/wrangelstrasse-35/1418"
+ },
+ "52.500715,13.434708": {
+  "address": "Zeughofstraße 23A, 10997 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/filialen/berlin-friedrichshain-kreuzberg/kreuzberg-zeughofstr-23-a.html"
+ },
+ "52.501073,13.408388": {
+  "address": "Prinzenstraße 96, 10969 Berlin",
+  "category": "drugstore",
+  "hours": "Mo,We,Fr 08:30-18:30; Tu,Th 08:30-19:00; Sa 09:00-14:00",
+  "match_score": 1.0
+ },
+ "52.501602,13.340993": {
+  "address": "Tauentzienstraße 21-24, 10789 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Th 10:00-20:00; Fr 10:00-21:00; Sa 09:30-20:00",
+  "match_score": 1.0,
+  "website": "https://www.kadewe.de/"
+ },
+ "52.501876,13.409716": {
+  "address": "Prinzenstraße 29, 10969 Berlin",
+  "category": "gas_station",
+  "hours": "24/7",
+  "match_score": 1.0,
+  "website": "http://tankstelle.aral.de/tankstelle/berlin/prinzenstrasse-29/11019700/"
+ },
+ "52.502075,13.414453": {
+  "address": "Oranienplatz 4, 10999",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0
+ },
+ "52.502119,13.416970": {
+  "category": "restaurant",
+  "match_score": 0.5
+ },
+ "52.503092,13.329379": {
+  "address": "Kurfürstendamm 224, 10719 Berlin",
+  "category": "restaurant",
+  "hours": "Su-Th 11:30-23:00; Fr,Sa 10:00-23:00",
+  "match_score": 1.0,
+  "website": "https://www.hardrockcafe.com/location/berlin/"
+ },
+ "52.503665,13.333016": {
+  "category": "transport",
+  "match_score": 0.5,
+  "website": "https://fahrinfo.vbb.de/bin/stboard.exe/dn?start=yes&input=900023203"
+ },
+ "52.503841,13.383782": {
+  "address": "Stresemannstraße 72-78, Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0
+ },
+ "52.503874,13.473193": {
+  "category": "shopping",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 0.67,
+  "website": "http://www.victoria-center-berlin.de"
+ },
+ "52.504178,13.444247": {
+  "address": "Tamara-Danz-Straße 3, 10243 Berlin",
+  "match_score": 1.0,
+  "website": "https://corporate.zalando.com"
+ },
+ "52.504351,13.442566": {
+  "address": "Mühlenstraße 13, 10243 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 08:00-18:00; Sa 08:00-18:00; Su 08:00-16:00",
+  "match_score": 0.5
+ },
+ "52.504626,13.333638": {
+  "address": "Kurfürstendamm 11, 10719 Berlin",
+  "category": "office",
+  "match_score": 0.5,
+  "website": "https://www.wework.com/buildings/ku-damm--berlin"
+ },
+ "52.504975,13.450121": {
+  "address": "Warschauer Platz 14, 10245 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00; PH,Su off",
+  "match_score": 1.0
+ },
+ "52.505343,13.393108": {
+  "address": "Charlottenstraße 1, 10969 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0
+ },
+ "52.505403,13.439890": {
+  "address": "Mühlenstraße 25, 10243 Berlin",
+  "category": "office",
+  "hours": "Mo-Sa 08:00-20:00",
+  "match_score": 0.5,
+  "website": "https://corporate.zalando.com"
+ },
+ "52.505698,13.459246": {
+  "address": "Revaler Straße 33, 10245 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:00-23:30",
+  "match_score": 1.0
+ },
+ "52.506044,13.330379": {
+  "address": "Kantstraße 10, 10623 Berlin",
+  "category": "cinema",
+  "hours": "\"30 Minuten vor Vorstellungsbeginn\"",
+  "match_score": 1.0,
+  "website": "https://yorck.de/kinos/delphi-lux"
+ },
+ "52.506069,13.334170": {
+  "address": "Hardenbergstraße 29a, 10623 Berlin",
+  "category": "cinema",
+  "match_score": 1.0,
+  "website": "https://zoopalast.premiumkino.de/"
+ },
+ "52.506316,13.559009": {
+  "address": "Weißenhöher Straße 108, 12683 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 09:30-20:00",
+  "match_score": 0.5,
+  "website": "https://www.biesdorf-center.de/"
+ },
+ "52.506618,13.412542": {
+  "address": "Heinrich-Heine-Straße 70, 10179 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0
+ },
+ "52.506662,13.483264": {
+  "address": "Coppistraße 21-23, 10365 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin-Lichtenberg/Buchberger-Str-40/5622/"
+ },
+ "52.507353,13.378207": {
+  "address": "Stresemannstraße 124, 10117 Berlin",
+  "match_score": 0.5
+ },
+ "52.507563,13.390177": {
+  "category": "cafe",
+  "match_score": 1.0
+ },
+ "52.507634,13.306746": {
+  "address": "Wilmersdorfer Straße 117, 10627 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Sa 08:00-22:00; Su, PH off",
+  "match_score": 1.0,
+  "website": "https://www.rossmann.de"
+ },
+ "52.507811,13.467597": {
+  "address": "Boxhagener Straße 80, 10245 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-23:00",
+  "match_score": 1.0,
+  "website": "https://www.penny.de/markt/berlin/565849/penny-box-80-boxhagener-strasse-80"
+ },
+ "52.509292,13.325274": {
+  "address": "Steinplatz 1, 10623 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 06:30-18:00; Sa 08:00-16:00; Su 09:00-13:00",
+  "match_score": 1.0,
+  "website": "https://www.steinecke.info"
+ },
+ "52.509389,13.506842": {
+  "address": "Einbecker Straße 57, 10315 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00; PH off",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de"
+ },
+ "52.509633,13.435124": {
+  "address": "Am Ostbahnhof 9, 10243 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Su 06:00-24:00",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/berlin-friedrichshain/4040089/rewe-markt-am-ostbahnhof-9/"
+ },
+ "52.509740,13.497300": {
+  "category": "transport",
+  "match_score": 0.5,
+  "website": "https://fahrinfo.vbb.de/bin/stboard.exe/dn?start=yes&input=900160004"
+ },
+ "52.509895,13.434328": {
+  "category": "supermarket",
+  "hours": "Mo-Su 07:00-23:00",
+  "match_score": 1.0
+ },
+ "52.510287,13.381402": {
+  "address": "Leipziger Straße 12, 10117 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-21:00",
+  "match_score": 1.0
+ },
+ "52.510477,13.452073": {
+  "address": "Warschauer Straße 64, 10243 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 06:00-21:00; Sa 07:00-21:00; Su 09:00-21:00",
+  "match_score": 0.67,
+  "website": "http://www.fleischereidomke.de/"
+ },
+ "52.511107,13.390024": {
+  "address": "Friedrichstraße 61, 10117 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 07:00-20:00; Sa 08:00-20:00; Su 09:00-19:00",
+  "match_score": 1.0
+ },
+ "52.511353,13.389463": {
+  "category": "cafe",
+  "hours": "Mo-Fr 07:00-20:00; PH,Sa-Su 09:00-19:00",
+  "match_score": 1.0
+ },
+ "52.512198,13.312061": {
+  "address": "Bismarckstraße 24, 10625 Berlin",
+  "category": "restaurant",
+  "hours": "Mo off; Tu-Su 12:00-22:30",
+  "match_score": 1.0,
+  "website": "https://www.ninhaochinarestaurantberlin.de/"
+ },
+ "52.512479,13.393671": {
+  "category": "cafe",
+  "hours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-19:00",
+  "match_score": 1.0,
+  "website": "https://einstein-kaffee.de/standorte/standorte-berlin/gendarmenmarkt/"
+ },
+ "52.512590,13.389352": {
+  "address": "Friedrichstraße 181, 10117 Berlin",
+  "hours": "Mo-Sa 10:00-18:00; PH off",
+  "match_score": 1.0,
+  "website": "https://www.deutsche-bank.de/ms/quartierzukunft/de/home.html"
+ },
+ "52.512608,13.390512": {
+  "address": "Anton-Wilhelm-Amo-Straße 50, 10117 Berlin",
+  "category": "fitness",
+  "hours": "Mo-Th 06:00-23:00; Fr 06:00-22:00; Sa,Su,PH 08:00-22:00",
+  "match_score": 0.67,
+  "website": "https://www.holmesplace.de/d/clubs/index.berlin-gendarmenmarkt.php"
+ },
+ "52.512789,13.196331": {
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin/Heerstr-221/5664/"
+ },
+ "52.513380,13.287486": {
+  "address": "Sophie-Charlotten-Straße 41, 14059 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:00-22:00",
+  "match_score": 1.0
+ },
+ "52.513456,13.389566": {
+  "address": "Friedrichstraße 71",
+  "category": "cafe",
+  "hours": "Mo-Fr 07:00-20:00; Sa 09:00-20:00; Su 09:00-18:00",
+  "match_score": 1.0
+ },
+ "52.513949,13.395584": {
+  "address": "Jägerstraße 27, 10117 Berlin",
+  "category": "fitness",
+  "hours": "Mo-Fr 06:00-23:00; Sa,Su,PH 08:00-20:00",
+  "match_score": 0.67,
+  "website": "https://www.fitnessfirst.de/clubs/berlin-gendarmenmarkt"
+ },
+ "52.514011,13.337276": {
+  "address": "Straße des 17. Juni 100, 10557 Berlin",
+  "category": "restaurant",
+  "hours": "Mo-Th 09:00-24:00; Fr-Sa 09:00-02:00, Su 09:00-24:00",
+  "match_score": 1.0,
+  "website": "https://www.burgerking.de/"
+ },
+ "52.515340,13.404460": {
+  "address": "Breite Straße 30-36, 10178 Berlin",
+  "category": "culture",
+  "hours": "Sa 10:00-19:00; Mo-Fr 10:00-21:00; Su,PH off",
+  "match_score": 1.0,
+  "website": "https://www.zlb.de/standorte/berliner-stadtbibliothek/"
+ },
+ "52.515421,13.388664": {
+  "address": "Friedrichstraße 165, 10117 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 08:00-19:00; Sa 08:00-16:00",
+  "match_score": 0.5,
+  "website": "https://www.lindner-esskultur.de/"
+ },
+ "52.515920,13.465900": {
+  "address": "Rigaer Straße 36-38, 10247 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0
+ },
+ "52.516749,13.379791": {
+  "address": "Pariser Platz 4A, 10117 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 08:00-21:00; Sa,Su 09:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.starbucks.de/store-locator/store/2099/pariser-platz-pariser-platz-4-a-berlin-be-10117-de"
+ },
+ "52.517659,13.293226": {
+  "address": "Neufertstraße 19-21, 14059 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.biocompany.de/bio-company-markt-finden/l/berlin/neufertstrasse-19-21/358387"
+ },
+ "52.517890,13.388070": {
+  "address": "Mittelstraße 51-53, 10117 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 10:00-20:00; Sa 10:00-16:00",
+  "match_score": 1.0,
+  "website": "https://www.basecamp.digital"
+ },
+ "52.518946,13.416197": {
+  "address": "Grunerstraße 20, 10179 Berlin",
+  "category": "fitness",
+  "hours": "24/7",
+  "match_score": 0.5,
+  "website": "https://superfit.club/"
+ },
+ "52.519005,13.300736": {
+  "address": "Otto-Suhr-Allee 141, 10585 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/berlin-charlottenburg/565157/rewe-markt-otto-suhr-allee-141/"
+ },
+ "52.519451,13.388810": {
+  "category": "cafe",
+  "hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 09:00-19:30",
+  "match_score": 1.0
+ },
+ "52.519629,13.410798": {
+  "address": "Rathausstraße 5, 10178 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 09:00-21:30",
+  "match_score": 1.0
+ },
+ "52.519775,13.388108": {
+  "address": "Friedrichstraße 147, 10117 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Fr 07:00-22:00; Sa 08:00-22:00; PH off",
+  "match_score": 1.0,
+  "website": "https://www.rossmann.de"
+ },
+ "52.520135,13.397646": {
+  "address": "Bodestraße 1, 10178 Berlin",
+  "category": "culture",
+  "hours": "Mo off; Tu-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+  "match_score": 1.0,
+  "website": "https://www.smb.museum/museen-einrichtungen/neues-museum/"
+ },
+ "52.520667,13.410671": {
+  "address": "Rathausstraße 6, 10178 Berlin",
+  "category": "restaurant",
+  "hours": "Su-Th,PH 11:00-22:00; Fr,Sa 11:00-23:00",
+  "match_score": 1.0
+ },
+ "52.520677,13.391110": {
+  "address": "Geschwister-Scholl-Straße 1/3, 10117 Berlin",
+  "category": "culture",
+  "hours": "Mo-Fr 09:00-24:00, Sa,Su 10:00-22:00",
+  "match_score": 0.5,
+  "website": "https://www.grimm-zentrum.hu-berlin.de/"
+ },
+ "52.520801,13.387773": {
+  "address": "Friedrichstraße 140, 10117 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 1.0,
+  "website": "http://www.monki.com"
+ },
+ "52.520919,13.410855": {
+  "address": "Gontardstraße 10, 10178",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-21:00",
+  "match_score": 1.0
+ },
+ "52.521135,13.414979": {
+  "address": "3, 10178 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Su 08:00-23:00",
+  "match_score": 1.0,
+  "website": "https://einstein-kaffee.de/standorte/standorte-berlin/alexanderplatz/"
+ },
+ "52.521295,13.186975": {
+  "address": "Wilhelmstraße 21-25, 13593 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 0.5,
+  "website": "https://www.kaufland.de/Home/index.jsp?FilialID=8860"
+ },
+ "52.521457,13.414852": {
+  "address": "3, 10178 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-21:00",
+  "match_score": 1.0,
+  "website": "http://www.newyorker.de"
+ },
+ "52.521515,13.414988": {
+  "address": "3, 10178 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 1.0,
+  "website": "https://www.saturn.de/de/store/berlin-alexanderplatz-12"
+ },
+ "52.521894,13.394257": {
+  "address": "Am Kupfergraben 1-3, 10117 Berlin",
+  "category": "culture",
+  "hours": "Mo off; Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+  "match_score": 1.0,
+  "website": "https://www.smb.museum/museen-und-einrichtungen/bode-museum/home.html"
+ },
+ "52.522122,13.407820": {
+  "address": "Karl-Liebknecht-Straße 13, 10178 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00; Su,PH off",
+  "match_score": 0.5,
+  "website": "https://filiale.kaufland.de/service/filiale/berlin-mitte-8920.html"
+ },
+ "52.522655,13.413474": {
+  "address": "Alexanderplatz 5-7, 10178 Berlin",
+  "category": "shopping",
+  "hours": "Mo-We 10:00-21:00; Th-Sa 10:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.primark.com/"
+ },
+ "52.523290,13.402170": {
+  "address": "Neue Promenade 3, 10178 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 07:30-21:00; Sa-Su 08:30-21:00",
+  "match_score": 1.0,
+  "website": "https://www.starbucks.co.uk/store-locator/53743-283045/berlin,-hackescher-markt"
+ },
+ "52.523810,13.409760": {
+  "address": "Memhardstraße 7, 10178 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Fr 11:00-19:00; Sa 11:00-18:00",
+  "match_score": 0.67,
+  "website": "https://www.nudiejeans.com/de/stores/nudie-jeans-repair-shop-berlin"
+ },
+ "52.523909,13.446796": {
+  "address": "Kochhannstraße 34, 10249 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00; PH off",
+  "match_score": 0.75,
+  "website": "https://www.netto-online.de/filialen/Berlin-Friedrichshain/Kochhannstr-40/7667/"
+ },
+ "52.524203,13.364085": {
+  "address": "Invalidenstraße 59, 10557 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.aldi-nord.de/"
+ },
+ "52.524815,13.404878": {
+  "address": "Neue Schönhauser Straße 3-5, 10178 Berlin",
+  "match_score": 1.0,
+  "website": "https://wework.com"
+ },
+ "52.524940,13.407227": {
+  "address": "Münzstraße 20, 10178 Berlin",
+  "hours": "Mo-Sa 10:30-20:00",
+  "match_score": 1.0
+ },
+ "52.525777,13.446631": {
+  "address": "Landsberger Allee 68D, 10249 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 07:00-24:00; Sa 07:00-23:30",
+  "match_score": 1.0,
+  "website": "http://www.rewe.de/"
+ },
+ "52.527098,13.539219": {
+  "address": "Helene-Weigel-Platz 1, 12681 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Fr 08:00-20:00; Sa 08:00-20:00; PH off",
+  "match_score": 0.5,
+  "website": "https://www.rossmann.de"
+ },
+ "52.527532,13.415462": {
+  "address": "Torstraße 1, 10119 Berlin",
+  "category": "hotel",
+  "match_score": 1.0,
+  "website": "https://www.sohohouse.com/de/houses/soho-house-berlin"
+ },
+ "52.527748,13.343926": {
+  "category": "shopping",
+  "hours": "Mo-Fr 10:00-20:00; Su,PH off",
+  "match_score": 1.0,
+  "website": "https://schultheissquartier.de/"
+ },
+ "52.528387,13.409592": {
+  "address": "Linienstraße 41, 10119 Berlin",
+  "category": "cafe",
+  "hours": "Mo-Fr 08:00-18:00; Sa 09:00-18:00; Su 10:00-18:00",
+  "match_score": 1.0,
+  "website": "https://www.whatdoyoufancylove.de/"
+ },
+ "52.528520,13.317380": {
+  "address": "Huttenstraße 41-44, 10553 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/huttenstrasse-41-44/3182343"
+ },
+ "52.529530,13.384134": {
+  "address": "Chausseestraße 118-120, 10115 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-23:00",
+  "match_score": 1.0,
+  "website": "https://www.rewe.de/marktseite/berlin-mitte/1350032/rewe-markt-chausseestr-118-120/"
+ },
+ "52.530176,13.383715": {
+  "address": "Chausseestraße 19, 10115 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 0.67
+ },
+ "52.531086,13.426626": {
+  "address": "Greifswalder Straße 218, 10405 Berlin",
+  "category": "restaurant",
+  "hours": "Tu-Sa 18:00-02:00,Su-Mo off",
+  "match_score": 1.0
+ },
+ "52.531740,13.399363": {
+  "address": "Brunnenstraße 181",
+  "category": "cafe",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 0.5
+ },
+ "52.532093,13.420431": {
+  "address": "Prenzlauer Allee 23, 10405 Berlin",
+  "category": "shopping",
+  "hours": "We-Fr 11:00-18:00; Sa 10:00-15:00",
+  "match_score": 1.0,
+  "website": "http://schneefeld-und-hund.de/"
+ },
+ "52.532158,13.360208": {
+  "address": "Lehrter Straße 57, 10557 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin-Moabit/Lehrter-Strasse-57/7618/"
+ },
+ "52.532188,13.419456": {
+  "address": "Belforter Straße 20, 10405 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0,
+  "website": "http://www.netto.de"
+ },
+ "52.533775,13.196603": {
+  "address": "Klosterstraße 3, 13581 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 1.0,
+  "website": "https://www.spandau-arcaden.de/"
+ },
+ "52.534235,13.378942": {
+  "address": "Chausseestraße 43, 10115 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-sapphire-chausseestr.-43/index.jsp"
+ },
+ "52.536346,13.423059": {
+  "address": "Prenzlauer Allee 44, 10405 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.lidl.de/s/de-DE/filialen/berlin-pankow/prenzlauer-allee-44/"
+ },
+ "52.537774,13.373323": {
+  "address": "Chausseestraße 84",
+  "category": "office",
+  "match_score": 0.62
+ },
+ "52.539386,13.413711": {
+  "address": "Schönhauser Allee 36, 10435 Berlin",
+  "category": "culture",
+  "match_score": 1.0,
+  "website": "https://kulturbrauerei.de/"
+ },
+ "52.541236,13.437454": {
+  "address": "Greifswalder Straße 168, 10409 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten/berlin/greifswalder-strasse-168/3181909.html"
+ },
+ "52.542156,13.370154": {
+  "address": "Reinickendorfer Straße 12, 13347 Berlin",
+  "category": "drugstore",
+  "hours": "Mo-Fr 08:30-19:00; Sa 09:00-14:00; Su off",
+  "match_score": 1.0,
+  "website": "https://www.lessing-apotheke-berlin.de/"
+ },
+ "52.542418,13.377968": {
+  "address": "Gerichtstraße 2-3, 13347 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00; PH off",
+  "match_score": 0.5,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten/berlin/gerichtstrasse-2-3/3180473.html"
+ },
+ "52.542687,13.418420": {
+  "address": "Raumerstraße 9",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.edeka.de/maerkte/009471/"
+ },
+ "52.543177,13.412792": {
+  "address": "Schönhauser Allee 53, 10437 Berlin",
+  "category": "drugstore",
+  "hours": "PH off; Mo-Sa 09:00-22:00",
+  "match_score": 0.5,
+  "website": "https://www.rossmann.de"
+ },
+ "52.543700,13.544787": {
+  "address": "Marzahner Promenade 1a, 12679 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 1.0,
+  "website": "https://www.eastgate-berlin.de/"
+ },
+ "52.543754,13.417378": {
+  "address": "Lychener Straße 39, 10437 Berlin",
+  "category": "restaurant",
+  "hours": "Mo-Th 18:00-24:00, Fr,Sa 17:00+, Su 18:00-11:00",
+  "match_score": 1.0,
+  "website": "http://www.dirtyvelvetberlin.com/"
+ },
+ "52.544529,13.391663": {
+  "address": "Brunnenstraße 87",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0
+ },
+ "52.546572,13.417637": {
+  "address": "Stargarder Straße 14, 10437 Berlin",
+  "category": "restaurant",
+  "hours": "17:00-05:00",
+  "match_score": 0.5,
+  "website": "http://www.badfishbarberlin.com"
+ },
+ "52.548988,13.401714": {
+  "address": "Schwedter Straße 83, 10437 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/schwedter-strasse-83/3181784"
+ },
+ "52.549630,13.415362": {
+  "address": "Schönhauser Allee, 10439 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 10:00-20:00",
+  "match_score": 1.0,
+  "website": "https://schoenhauseralleearcaden.de/"
+ },
+ "52.549743,13.389291": {
+  "address": "Badstraße 4, 13357 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 08:00-21:00",
+  "match_score": 1.0,
+  "website": "https://www.gesundbrunnen-center.de/"
+ },
+ "52.550825,13.432357": {
+  "address": "Ostseestraße 23, 10409 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 06:00-22:00",
+  "match_score": 1.0
+ },
+ "52.550907,13.413541": {
+  "address": "Schönhauser Allee 112, 10439 Berlin",
+  "category": "fitness",
+  "hours": "Mo-Fr 06:30-23:00; Sa,Su,PH 09:00-21:00",
+  "match_score": 1.0,
+  "website": "https://johnreed.fitness/womens-club-berlin-prenzlauer-berg"
+ },
+ "52.552555,13.421382": {
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 1.0
+ },
+ "52.552644,13.347554": {
+  "address": "Müllerstraße 127, 13349 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 08:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.edeka.de/eh/minden-hannover/edeka-fromm-müllerstr.-127/"
+ },
+ "52.555111,13.411672": {
+  "address": "Gotlandstraße 6, 10439 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-22:00",
+  "match_score": 1.0,
+  "website": "https://www.netto-online.de/filialen/Berlin/Gotlandstr-6/5725/"
+ },
+ "52.557376,13.411842": {
+  "address": "Esplanade 9, 13187 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 0.5,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/esplanade-9/3182005"
+ },
+ "52.561235,13.208134": {
+  "address": "Streitstraße 59, 13587 Berlin",
+  "category": "supermarket",
+  "match_score": 0.67
+ },
+ "52.564468,13.506108": {
+  "address": "Prerower Platz 1, 13051 Berlin",
+  "category": "shopping",
+  "hours": "Mo-Sa 09:30-20:00",
+  "match_score": 1.0,
+  "website": "https://m.linden-center-berlin.de"
+ },
+ "52.567732,13.328635": {
+  "address": "Ollenhauerstraße 122, 13403 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Fr 07:00-24:00; Sa 07:00-23:30",
+  "match_score": 1.0,
+  "website": "https://filiale.kaufland.de/service/filiale/berlin-reinickendorf-1980.html"
+ },
+ "52.591902,13.286703": {
+  "address": "Buddestraße 32, 13507 Berlin",
+  "category": "supermarket",
+  "hours": "Mo-Sa 07:00-21:00",
+  "match_score": 0.5,
+  "website": "https://www.aldi-nord.de/filialen-und-oeffnungszeiten.html/l/berlin/buddestrasse-32/3181696"
+ }
+}
