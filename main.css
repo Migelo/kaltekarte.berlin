@@ -571,6 +571,23 @@ body {
   color: #1f6feb;
 }
 
+.popup-meta {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+.leaflet-popup-content a.popup-link-web,
+.popup-link-web {
+  background: #6c7a89;
+}
+
+.leaflet-popup-content a.popup-link-web:hover,
+.popup-link-web:hover {
+  background: #586472;
+}
+
 .err {
   color: #c0392b;
   font-size: 0.85rem;

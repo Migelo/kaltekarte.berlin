@@ -262,22 +262,37 @@ function addPoints(geojson) {
     counts[cat] = (counts[cat] || 0) + 1;
     var coords = f.geometry.coordinates; // [lon, lat]
     var lat = coords[1], lon = coords[0];
-    var name = f.properties.name;
+    var p = f.properties;
+    var name = p.name;
     var marker = L.marker([lat, lon], { icon: markerIcon(cat) });
     var c = CATEGORY_BY_KEY[cat];
     var walkUrl = 'https://www.google.com/maps/dir/?api=1&destination=' +
       lat + ',' + lon + '&travelmode=walking';
+
+    // Optional OSM-enriched fields.
+    var meta = '';
+    if (p.address) meta += '<div class="popup-meta">\u{1F4CD} ' + escapeHtml(p.address) + '</div>';
+    if (p.hours)   meta += '<div class="popup-meta">\u{1F552} ' + escapeHtml(p.hours) + '</div>';
+    var webLink = '';
+    if (p.website) {
+      var href = /^https?:/.test(p.website) ? p.website : 'https://' + p.website;
+      webLink = '<a class="popup-link popup-link-web" href="' + escapeHtml(href) +
+        '" target="_blank" rel="noopener noreferrer">Website &#8599;</a>';
+    }
+
     marker.bindPopup(
       '<div class="popup">' +
       '<strong>' + escapeHtml(name) + '</strong>' +
       '<div class="popup-cat"><span class="dot" style="background:' + c.color + '"><span class="ic">' +
       c.emoji + '</span></span>' + c.label + '</div>' +
+      meta +
       '<div class="popup-dist" hidden></div>' +
       '<div class="popup-links">' +
       '<a class="popup-link" href="' + gmapsUrl(name, lat, lon) +
       '" target="_blank" rel="noopener noreferrer">View on Google Maps &#8599;</a>' +
       '<a class="popup-link popup-link-walk" href="' + walkUrl +
       '" target="_blank" rel="noopener noreferrer">Walk here &#8599;</a>' +
+      webLink +
       '</div>' +
       '</div>'
     );

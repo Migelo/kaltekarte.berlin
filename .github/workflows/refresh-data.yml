@@ -1,0 +1,47 @@
+name: Refresh map data
+
+# Pulls the latest Google My Maps export (the "Add a location" form feeds My
+# Maps, not this repo) and regenerates points.geojson, opening a PR so the diff
+# is reviewed before it goes live. Run manually from the Actions tab or weekly.
+on:
+  schedule:
+    - cron: '17 4 * * 1' # Mondays 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download latest My Maps KML
+        run: |
+          curl -fsSL \
+            "https://www.google.com/maps/d/kml?mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l&forcekml=1" \
+            -o tools/kaltekarte.kml
+
+      - name: Regenerate points.geojson
+        # generate_geojson.py validates (Berlin bbox, dedupe) and aborts if
+        # fewer than 300 features parse, so a broken fetch never overwrites
+        # good data. It also merges tools/osm_enrichment.json when present.
+        run: python3 tools/generate_geojson.py
+
+      - name: Open a PR if the data changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'data: refresh from Google My Maps'
+          title: 'Refresh map data from Google My Maps'
+          body: |
+            Automated refresh of `points.geojson` from the Google My Maps KML export.
+
+            The "Add a location" form feeds Google My Maps, so new submissions
+            only reach the site through this sync. Review the diff before merging.
+          branch: auto/refresh-data
+          delete-branch: true
+          add-paths: |
+            tools/kaltekarte.kml
+            points.geojson

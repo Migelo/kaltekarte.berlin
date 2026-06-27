@@ -101,8 +101,8 @@ KEY ASSUMPTIONS / DECISIONS
    spot in the vast majority of cases; for a few ambiguous/independent names it
    may land on a nearby search result instead of the exact venue.
 
-8. og:image still references the old static map screenshot (map.f18ffe68.jpg).
-   It is now slightly out of date but harmless; left in place.
+8. og:image was replaced with a fresh on-brand 1200x630 card (og-map.jpg). The
+   old map.f18ffe68.jpg is left in the repo (no longer referenced, harmless).
 
 9. NO PULL REQUEST TO UPSTREAM. Work was pushed only to YOUR fork
    (Migelo/kaltekarte.berlin) on branch add-category-filters. I did not open a PR
@@ -122,3 +122,53 @@ To regenerate the data after editing categories or re-exporting from My Maps:
   # refresh tools/kaltekarte.kml from:
   #   https://www.google.com/maps/d/kml?mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l&forcekml=1
   python3 tools/generate_geojson.py     # rewrites points.geojson
+
+================================================================================
+FEATURE ADDITIONS (round 2)
+================================================================================
+After the initial filter rebuild, the following were added (each its own commit).
+All are keyless/static unless noted.
+
+A. DATA FIXES (tools/generate_geojson.py)
+   - Rejects points outside a Berlin bounding box (removed a point that was in
+     Boulder, Colorado), dedupes exact (name+coord) repeats, and aborts if <300
+     valid features parse (so a broken KML fetch can't overwrite good data).
+   - Greedy keywords (gmbh/co.kg/ag/se, club) were demoted to a fallback pass so
+     brand matches win first (fixed JOHN REED -> fitness, HUMANA/KiK/HELLWEG ->
+     shopping). 388 placemarks -> 383 features.
+
+B. HEAT-RELIEF
+   - "Nearest" button flies to the closest filter-respecting place.
+   - Popups show straight-line distance + rough walk time once located, plus a
+     "Walk here" Google Maps walking-directions link.
+   - Heat banner shows the live Open-Meteo "feels like" temperature on hot days
+     (>=27C). Open-Meteo is free/keyless; fails silently when offline.
+   - Distances/walk-times are straight-line (labelled "~"), not routed.
+
+C. SEARCH & DISCOVERY
+   - Instant client-side name search; live "N / total" count.
+   - Shareable URL-hash state (#cat=...&q=...&z=..&c=lat,lon) restored on load.
+   - Results list (bottom sheet) sorted by distance when located, else by name.
+   - About dialog. Search is name-only (the data has no address/neighbourhood
+     text to search beyond the OSM enrichment below).
+
+D. DATA FRESHNESS & ENRICHMENT
+   - .github/workflows/refresh-data.yml: weekly + manual Action that pulls the
+     My Maps KML, regenerates points.geojson, and opens a PR. NOTE: GitHub
+     Actions and scheduled workflows are DISABLED on new forks until you enable
+     them in the fork's Actions tab; the workflow needs contents+PR write perms.
+   - tools/enrich_osm.py: offline, keyless enrichment via the OpenStreetMap
+     Overpass API. Matches each point by proximity (<=70 m) + name-token
+     similarity and caches address / opening hours / website / a mapped category
+     into tools/osm_enrichment.json. generate_geojson.py merges that cache into
+     points.geojson (adds address/hours/website; overrides category only on a
+     confident match, recording properties.category_source = "osm" | "name").
+     Popups surface address/hours/website when present.
+   - Enrichment caveats: matching is fuzzy; chain names match well, ambiguous
+     independents often don't match (kept as heuristic, no address). Re-run
+     tools/enrich_osm.py occasionally and review the diff. Coverage % is printed
+     by the script. Nominatim/Overpass are fair-use; the script batches + delays
+     and is meant to run offline, never from the browser (the live site makes no
+     API calls — it reads the committed JSON).
+   - SSL note: in some sandboxes Python can't find a CA bundle; run with
+     SSL_CERT_FILE=/etc/ssl/cert.pem if you hit CERTIFICATE_VERIFY_FAILED.

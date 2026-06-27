@@ -147,6 +147,13 @@ def main():
     kml = open(KML, encoding="utf-8").read()
     placemarks = re.findall(r"<Placemark>(.*?)</Placemark>", kml, re.S)
 
+    # Optional OSM enrichment (address / hours / website / better category),
+    # produced offline by enrich_osm.py. Keyed by "lat,lon" at 6 decimals.
+    enrich = {}
+    epath = os.path.join(HERE, "osm_enrichment.json")
+    if os.path.exists(epath):
+        enrich = json.load(open(epath, encoding="utf-8"))
+
     features = []
     counts = Counter()
     others = []
@@ -178,13 +185,22 @@ def main():
         seen.add(key)
 
         cat = categorize(name)
+        e = enrich.get("{:.6f},{:.6f}".format(lat, lon), {})
+        source = "name"
+        if e.get("category"):
+            cat = e["category"]   # confident OSM match overrides the heuristic
+            source = "osm"
         counts[cat] += 1
         if cat == "other":
             others.append(name)
+        props = {"name": name, "category": cat, "category_source": source}
+        for fld in ("address", "hours", "website"):
+            if e.get(fld):
+                props[fld] = e[fld]
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [lon, lat]},
-            "properties": {"name": name, "category": cat},
+            "properties": props,
         })
 
     # Safety net: refuse to overwrite good data with a broken/empty fetch.
