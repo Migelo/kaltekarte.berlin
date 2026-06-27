@@ -30,18 +30,18 @@
   <!-- End Facebook Pixel Code -->
 
 
-  <script>
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        document.getElementById("map").src = "https://www.google.com/maps/d/u/1/embed?mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l&&ll=" + position.coords.latitude + "," + position.coords.longitude
-      })
-    }
-  </script>
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Kalte Karte - air-conditioned places in Berlin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Leaflet + marker clustering (OpenStreetMap, no API key required) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
   <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <meta property="og:title" content="Kalte Karte - air-conditioned places in Berlin" />
@@ -55,7 +55,17 @@
 </head>
 <body>
   <div id="app">
-    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l" width="640" height="480" id="map"></iframe>
+    <div id="map"></div>
+
+    <div id="filters" aria-label="Filter locations by category">
+      <div id="filter-head">
+        <strong class="filter-title">Filter</strong>
+        <button type="button" id="filter-all" class="filter-ctl">All</button>
+        <button type="button" id="filter-none" class="filter-ctl">None</button>
+        <button type="button" id="filter-toggle" class="filter-ctl" aria-label="Show/hide filters">&#9776;</button>
+      </div>
+      <div id="filter-chips"></div>
+    </div>
 
     <footer id="buttons">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScgFQNGZXAQaq0lIyHrB8Uxi9EQhOyE0KoQAiGTopB87YlGnA/viewform?usp=sf_link" target="_blank" class="button" id="add-button">
@@ -67,5 +77,6 @@
       </a>
     </footer>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,5437 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415943,
+     52.526349
+    ]
+   },
+   "properties": {
+    "name": "Zalando Tech Headquarters BMO",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.444247,
+     52.504178
+    ]
+   },
+   "properties": {
+    "name": "Zalando SE",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.393108,
+     52.505343
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414794,
+     52.519902
+    ]
+   },
+   "properties": {
+    "name": "Alexa",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.424933,
+     52.486645
+    ]
+   },
+   "properties": {
+    "name": "McDonald's",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.43989,
+     52.505403
+    ]
+   },
+   "properties": {
+    "name": "Zalando BM1",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436007,
+     52.502488
+    ]
+   },
+   "properties": {
+    "name": "Zalando Lounge",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436488,
+     52.50921
+    ]
+   },
+   "properties": {
+    "name": "Zalando Content Creation GmbH & Co. KG",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.471483,
+     52.507161
+    ]
+   },
+   "properties": {
+    "name": "Zalando BNB",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.410798,
+     52.519629
+    ]
+   },
+   "properties": {
+    "name": "Decathlon",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.324748,
+     52.462587
+    ]
+   },
+   "properties": {
+    "name": "Boulevard Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.418747,
+     52.499342
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409242,
+     52.503942
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Kreuzberg",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.389291,
+     52.549743
+    ]
+   },
+   "properties": {
+    "name": "Gesundbrunnen-Center Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390348,
+     52.506571
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.379791,
+     52.516749
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38881,
+     52.519451
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415462,
+     52.527532
+    ]
+   },
+   "properties": {
+    "name": "Soho House Berlin",
+    "category": "hotel"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.392376,
+     52.496519
+    ]
+   },
+   "properties": {
+    "name": "America Memorial Library",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38807,
+     52.51789
+    ]
+   },
+   "properties": {
+    "name": "Telefónica Basecamp",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.385891,
+     52.455587
+    ]
+   },
+   "properties": {
+    "name": "Tempelhofer Hafen Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.367014,
+     52.470364
+    ]
+   },
+   "properties": {
+    "name": "IKEA Tempelhof",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.439908,
+     52.507022
+    ]
+   },
+   "properties": {
+    "name": "Zalando BVG",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.435235,
+     52.501764
+    ]
+   },
+   "properties": {
+    "name": "Zalando Lounge HQ - BZS",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.444247,
+     52.504178
+    ]
+   },
+   "properties": {
+    "name": "Zalando SE",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415943,
+     52.526349
+    ]
+   },
+   "properties": {
+    "name": "Zalando Tech Headquarters BMO",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.392699,
+     52.506655
+    ]
+   },
+   "properties": {
+    "name": "Zalando TechTower BCS",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.448713,
+     52.501769
+    ]
+   },
+   "properties": {
+    "name": "ZMS / Zalando Media Solutions GmbH",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38245,
+     52.51004
+    ]
+   },
+   "properties": {
+    "name": "Zalando Customer Care Central Europe",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415362,
+     52.54963
+    ]
+   },
+   "properties": {
+    "name": "Schönhauser Allee Arcaden",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.334758,
+     52.505598
+    ]
+   },
+   "properties": {
+    "name": "Bikini Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.288239,
+     52.451922
+    ]
+   },
+   "properties": {
+    "name": "Philological Library",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.564188,
+     52.446162
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.42023,
+     52.4954
+    ]
+   },
+   "properties": {
+    "name": "JOHN REED Fitness",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.42217,
+     52.49344
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY Kottbusser Damm",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.333638,
+     52.504626
+    ]
+   },
+   "properties": {
+    "name": "WeWork Ku'damm",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.378207,
+     52.507353
+    ]
+   },
+   "properties": {
+    "name": "WeWork Potsdamer Platz",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.404878,
+     52.524815
+    ]
+   },
+   "properties": {
+    "name": "WeWork Hackescher Markt",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.340993,
+     52.501602
+    ]
+   },
+   "properties": {
+    "name": "Kaufhaus des Westens",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.421382,
+     52.552555
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.411622,
+     52.522391
+    ]
+   },
+   "properties": {
+    "name": "Galeria Kaufhof Berlin Alexanderplatz",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373503,
+     52.509844
+    ]
+   },
+   "properties": {
+    "name": "Sony Center",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.412956,
+     52.522982
+    ]
+   },
+   "properties": {
+    "name": "Spagos Restaurant - Bar & Lounge",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.380896,
+     52.50998
+    ]
+   },
+   "properties": {
+    "name": "Hotel Motel One Berlin-Potsdamer Platz",
+    "category": "hotel"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.381045,
+     52.510509
+    ]
+   },
+   "properties": {
+    "name": "Mall of Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.375313,
+     52.510307
+    ]
+   },
+   "properties": {
+    "name": "The Ritz-Carlton, Berlin",
+    "category": "hotel"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.514624,
+     52.533879
+    ]
+   },
+   "properties": {
+    "name": "IKEA Lichtenberg",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.396869,
+     52.518833
+    ]
+   },
+   "properties": {
+    "name": "German Historical Museum",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.398861,
+     52.533512
+    ]
+   },
+   "properties": {
+    "name": "BECYCLE",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.283755,
+     52.575479
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Ulrich",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.402658,
+     52.523635
+    ]
+   },
+   "properties": {
+    "name": "Uniqlo",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39132,
+     52.500058
+    ]
+   },
+   "properties": {
+    "name": "EDEKA",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39132,
+     52.500058
+    ]
+   },
+   "properties": {
+    "name": "EDEKA",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.403526,
+     52.503605
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Ritterstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388517,
+     52.489708
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Bergmannstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.380769,
+     52.510198
+    ]
+   },
+   "properties": {
+    "name": "ALDI",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.408156,
+     52.504133
+    ]
+   },
+   "properties": {
+    "name": "Shell",
+    "category": "gas_station"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.440411,
+     52.543976
+    ]
+   },
+   "properties": {
+    "name": "GetYourGuide Germany GmbH",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373789,
+     52.508775
+    ]
+   },
+   "properties": {
+    "name": "CinemaxX Berlin",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.372742,
+     52.509868
+    ]
+   },
+   "properties": {
+    "name": "CineStar Original and IMAX",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.326597,
+     52.464197
+    ]
+   },
+   "properties": {
+    "name": "Cineplex Titania",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.351042,
+     52.550569
+    ]
+   },
+   "properties": {
+    "name": "Cineplex Alhambra",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.432458,
+     52.481992
+    ]
+   },
+   "properties": {
+    "name": "Cineplex",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.206419,
+     52.538484
+    ]
+   },
+   "properties": {
+    "name": "Cineplex Spandau",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.413022,
+     52.547979
+    ]
+   },
+   "properties": {
+    "name": "UCI Cinema",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.443348,
+     52.524355
+    ]
+   },
+   "properties": {
+    "name": "UCI KINOWELT",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.442973,
+     52.524376
+    ]
+   },
+   "properties": {
+    "name": "Uci Kinowelt Friedrichshain",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.542189,
+     52.541984
+    ]
+   },
+   "properties": {
+    "name": "UCI Kinowelt",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.455456,
+     52.429572
+    ]
+   },
+   "properties": {
+    "name": "UCI KINOWELT",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.393142,
+     52.5248
+    ]
+   },
+   "properties": {
+    "name": "Delivery Hero AG",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.416225,
+     52.506406
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin Mitte",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415475,
+     52.507775
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Annenstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414888,
+     52.507428
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414784,
+     52.507528
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373238,
+     52.506378
+    ]
+   },
+   "properties": {
+    "name": "WeWork Atrium Tower",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.424406,
+     52.487401
+    ]
+   },
+   "properties": {
+    "name": "Karstadt Hermannplatz Berlin Kreuzberg",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.415332,
+     52.525142
+    ]
+   },
+   "properties": {
+    "name": "Netto",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.496154,
+     52.505354
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.394941,
+     52.507464
+    ]
+   },
+   "properties": {
+    "name": "Axel-Springer-Passage",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.37969,
+     52.524544
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.460148,
+     52.498271
+    ]
+   },
+   "properties": {
+    "name": "MHP Lab",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.47393,
+     52.514072
+    ]
+   },
+   "properties": {
+    "name": "Ring-Center Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.408119,
+     52.534519
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.391663,
+     52.544529
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.364085,
+     52.524203
+    ]
+   },
+   "properties": {
+    "name": "ALDI",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.356739,
+     52.53772
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Moabit",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.357522,
+     52.537354
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Tiergarten",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.377968,
+     52.542418
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Gesundbrunnen",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.401714,
+     52.548988
+    ]
+   },
+   "properties": {
+    "name": "ALDI",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.411842,
+     52.557376
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Pankow",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434443,
+     52.550034
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Prenzlauer Berg",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.448237,
+     52.550158
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Weißensee",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.437454,
+     52.541236
+    ]
+   },
+   "properties": {
+    "name": "Aldi",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390024,
+     52.511107
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.410093,
+     52.520874
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.376438,
+     52.510582
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373101,
+     52.509497
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.397126,
+     52.532342
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.304384,
+     52.509238
+    ]
+   },
+   "properties": {
+    "name": "Wilmersdorfer Arcaden",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.407227,
+     52.52494
+    ]
+   },
+   "properties": {
+    "name": "Monki",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.413474,
+     52.522655
+    ]
+   },
+   "properties": {
+    "name": "Primark",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414979,
+     52.521135
+    ]
+   },
+   "properties": {
+    "name": "EINSTEIN KAFFEE",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38416,
+     52.532339
+    ]
+   },
+   "properties": {
+    "name": "EINSTEIN KAFFEE",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414264,
+     52.549665
+    ]
+   },
+   "properties": {
+    "name": "Cafe Einstein",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40377,
+     52.525501
+    ]
+   },
+   "properties": {
+    "name": "Einstein Kaffee",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.389566,
+     52.513456
+    ]
+   },
+   "properties": {
+    "name": "Einstein Kaffee",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.37993,
+     52.510451
+    ]
+   },
+   "properties": {
+    "name": "EINSTEIN KAFFEE",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390177,
+     52.507563
+    ]
+   },
+   "properties": {
+    "name": "Einstein Kaffee",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.393671,
+     52.512479
+    ]
+   },
+   "properties": {
+    "name": "Einstein Kaffee",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.389463,
+     52.511353
+    ]
+   },
+   "properties": {
+    "name": "EINSTEIN KAFFEE",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.387773,
+     52.520801
+    ]
+   },
+   "properties": {
+    "name": "Monki",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414988,
+     52.521515
+    ]
+   },
+   "properties": {
+    "name": "Saturn",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414852,
+     52.521457
+    ]
+   },
+   "properties": {
+    "name": "New Yorker",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.411791,
+     52.522362
+    ]
+   },
+   "properties": {
+    "name": "Topshop",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.327795,
+     52.503354
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.383782,
+     52.503841
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.450121,
+     52.504975
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.396632,
+     52.51057
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.374958,
+     52.48984
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.372336,
+     52.485363
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.329272,
+     52.501939
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.417637,
+     52.546572
+    ]
+   },
+   "properties": {
+    "name": "Badfish Bar",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.327696,
+     52.465596
+    ]
+   },
+   "properties": {
+    "name": "Schloss-Strassen-Center Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.295314,
+     52.519109
+    ]
+   },
+   "properties": {
+    "name": "Berggruen Museum",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.393538,
+     52.506731
+    ]
+   },
+   "properties": {
+    "name": "\"KLEENE\" BIO COMPANY Rudi-Dutschke-Straße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.404174,
+     52.570636
+    ]
+   },
+   "properties": {
+    "name": "Rathaus-Center Pankow",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4276,
+     52.499465
+    ]
+   },
+   "properties": {
+    "name": "Mindspace Skalitzerstraße",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.420293,
+     52.516794
+    ]
+   },
+   "properties": {
+    "name": "Netto Supermarket",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.387356,
+     52.527389
+    ]
+   },
+   "properties": {
+    "name": "Bolia.com - Berlin Mitte",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.344698,
+     52.532106
+    ]
+   },
+   "properties": {
+    "name": "MOA Bogen",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.375048,
+     52.490282
+    ]
+   },
+   "properties": {
+    "name": "ALDI",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.401412,
+     52.511561
+    ]
+   },
+   "properties": {
+    "name": "Cosmo Hotel Berlin Mitte",
+    "category": "hotel"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.370814,
+     52.5076
+    ]
+   },
+   "properties": {
+    "name": "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.391443,
+     52.518942
+    ]
+   },
+   "properties": {
+    "name": "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.33582,
+     52.537031
+    ]
+   },
+   "properties": {
+    "name": "Staatsbibliothek zu Berlin -Zeitungsabteilung/Kinder- und Jugendbuchabteilung - SBB-PK",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.350816,
+     52.500469
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.442557,
+     52.52468
+    ]
+   },
+   "properties": {
+    "name": "STOFF & STIL",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.438632,
+     52.552734
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.428618,
+     52.495767
+    ]
+   },
+   "properties": {
+    "name": "PENNY-Markt Discounter",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.398158,
+     52.503956
+    ]
+   },
+   "properties": {
+    "name": "Berlinische Galerie",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.470931,
+     52.510019
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Friedrichshain",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40592,
+     52.525266
+    ]
+   },
+   "properties": {
+    "name": "Sandqvist",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4123,
+     52.563675
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.349306,
+     52.547928
+    ]
+   },
+   "properties": {
+    "name": "Vagabund Brauerei",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.260481,
+     52.434525
+    ]
+   },
+   "properties": {
+    "name": "Tchibo Filiale mit Kaffee Bar",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.263659,
+     52.437461
+    ]
+   },
+   "properties": {
+    "name": "Fitness First Berlin - Zehlendorf wave",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.362338,
+     52.499421
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.391027,
+     52.506619
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390557,
+     52.51681
+    ]
+   },
+   "properties": {
+    "name": "Microsoft Berlin",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.421872,
+     52.485612
+    ]
+   },
+   "properties": {
+    "name": "Holmes Place Berlin New World",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388786,
+     52.518334
+    ]
+   },
+   "properties": {
+    "name": "Dussmann das KulturKaufhaus",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.377059,
+     52.468083
+    ]
+   },
+   "properties": {
+    "name": "Kaufland",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.391332,
+     52.54792
+    ]
+   },
+   "properties": {
+    "name": "Kaufland",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373678,
+     52.559009
+    ]
+   },
+   "properties": {
+    "name": "Kaufland Berlin Residenzstr.",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.345684,
+     52.552775
+    ]
+   },
+   "properties": {
+    "name": "Kaufland Berlin-Wedding",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.427463,
+     52.474176
+    ]
+   },
+   "properties": {
+    "name": "ALDI",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.329748,
+     52.42954
+    ]
+   },
+   "properties": {
+    "name": "Rossmann",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.345327,
+     52.436319
+    ]
+   },
+   "properties": {
+    "name": "dm-drogerie markt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.408394,
+     52.527752
+    ]
+   },
+   "properties": {
+    "name": "Rapha Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409116,
+     52.523672
+    ]
+   },
+   "properties": {
+    "name": "GOOD BANK",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.372516,
+     52.510637
+    ]
+   },
+   "properties": {
+    "name": "WeWork",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.621544,
+     52.533235
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.341898,
+     52.526591
+    ]
+   },
+   "properties": {
+    "name": "Go Asia Berlin-Mitte",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.451053,
+     52.478623
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.423059,
+     52.536346
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38823,
+     52.50017
+    ]
+   },
+   "properties": {
+    "name": "Willy-Brandt-Haus",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.333324,
+     52.477037
+    ]
+   },
+   "properties": {
+    "name": "Edeka aktiv Markt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.326859,
+     52.479731
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Burau",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.312061,
+     52.512198
+    ]
+   },
+   "properties": {
+    "name": "Nin Hao",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.426072,
+     52.476969
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.345369,
+     52.484989
+    ]
+   },
+   "properties": {
+    "name": "Schäfer's",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.422705,
+     52.491572
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.330379,
+     52.506044
+    ]
+   },
+   "properties": {
+    "name": "Delphi LUX",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.428016,
+     52.478519
+    ]
+   },
+   "properties": {
+    "name": "Rollberg Kino",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.430353,
+     52.529045
+    ]
+   },
+   "properties": {
+    "name": "Yorck-movie theater at Friedrichshain",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.41697,
+     52.502119
+    ]
+   },
+   "properties": {
+    "name": "Hotel Orania.Berlin",
+    "category": "hotel"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.286703,
+     52.591902
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Tegel",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.577502,
+     52.45816
+    ]
+   },
+   "properties": {
+    "name": "Forum Köpenick",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.374188,
+     52.507716
+    ]
+   },
+   "properties": {
+    "name": "Potsdamer Platz Arkaden",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.41842,
+     52.542687
+    ]
+   },
+   "properties": {
+    "name": "Nah und Gut Bülow",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.288437,
+     52.558833
+    ]
+   },
+   "properties": {
+    "name": "Berlin Tegel Airport",
+    "category": "transport"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.465339,
+     52.500382
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.350626,
+     52.552196
+    ]
+   },
+   "properties": {
+    "name": "real",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.425625,
+     52.47821
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.413643,
+     52.529201
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Straßburger Straße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388108,
+     52.519775
+    ]
+   },
+   "properties": {
+    "name": "Rossmann",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.337276,
+     52.514011
+    ]
+   },
+   "properties": {
+    "name": "Burger King",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.403038,
+     52.527931
+    ]
+   },
+   "properties": {
+    "name": "JOHN REED Women's Club",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.413541,
+     52.550907
+    ]
+   },
+   "properties": {
+    "name": "JOHN REED Women's Club",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.435571,
+     52.480156
+    ]
+   },
+   "properties": {
+    "name": "H&M",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434076,
+     52.481382
+    ]
+   },
+   "properties": {
+    "name": "Forum-Apotheke am Rathaus Neukölln",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.293226,
+     52.517659
+    ]
+   },
+   "properties": {
+    "name": "Bio Company",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.425714,
+     52.414826
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4311,
+     52.49214
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388931,
+     52.489671
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.31738,
+     52.52852
+    ]
+   },
+   "properties": {
+    "name": "Aldi",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.433729,
+     52.484518
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY Sonnenallee",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.370154,
+     52.542156
+    ]
+   },
+   "properties": {
+    "name": "Lessing-Apotheke e.K.",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.37394,
+     52.48527
+    ]
+   },
+   "properties": {
+    "name": "Waschküche",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.449906,
+     52.509042
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.459246,
+     52.505698
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.360208,
+     52.532158
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.287486,
+     52.51338
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.449975,
+     52.507736
+    ]
+   },
+   "properties": {
+    "name": "Veganz Berlin-Friedrichshain",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.404266,
+     52.524504
+    ]
+   },
+   "properties": {
+    "name": "Sisley",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.426626,
+     52.531086
+    ]
+   },
+   "properties": {
+    "name": "Dream Baby Dream",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434708,
+     52.500715
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.368478,
+     52.544983
+    ]
+   },
+   "properties": {
+    "name": "Zieten pharmacy Wedding",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.433712,
+     52.485192
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.399363,
+     52.53174
+    ]
+   },
+   "properties": {
+    "name": "ocelot, bookstore",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.531868,
+     52.430836
+    ]
+   },
+   "properties": {
+    "name": "Erwin Schrödinger Center",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.395584,
+     52.513949
+    ]
+   },
+   "properties": {
+    "name": "Fitness First Berlin - Gendarmenmarkt",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40782,
+     52.522122
+    ]
+   },
+   "properties": {
+    "name": "Kaufland Berlin-Mitte",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409816,
+     52.550519
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39111,
+     52.520677
+    ]
+   },
+   "properties": {
+    "name": "Grimm-Zentrum",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.392171,
+     52.52003
+    ]
+   },
+   "properties": {
+    "name": "Meyerbeer-Coffee",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409592,
+     52.528387
+    ]
+   },
+   "properties": {
+    "name": "What do you fancy love?",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.420431,
+     52.532093
+    ]
+   },
+   "properties": {
+    "name": "Fräulein Schneefeld & Herr Hund",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.404019,
+     52.521016
+    ]
+   },
+   "properties": {
+    "name": "ICEBAR - EISBAR - BAR - ANGIYOK - The Arctic Experience - Berliner Eiswelten",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.306746,
+     52.507634
+    ]
+   },
+   "properties": {
+    "name": "Rossmann",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.54832,
+     52.438323
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Dörpfeldstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.483264,
+     52.506662
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.432,
+     52.467128
+    ]
+   },
+   "properties": {
+    "name": "HermannQuartier",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.328635,
+     52.567732
+    ]
+   },
+   "properties": {
+    "name": "Kaufland",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3674,
+     52.509705
+    ]
+   },
+   "properties": {
+    "name": "Museum of Decorative Arts",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.397646,
+     52.520135
+    ]
+   },
+   "properties": {
+    "name": "Neues Museum",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.394257,
+     52.521894
+    ]
+   },
+   "properties": {
+    "name": "Bode Museum",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388955,
+     52.547783
+    ]
+   },
+   "properties": {
+    "name": "Berlin Underworlds e.V.",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.333067,
+     52.469807
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.386527,
+     52.491178
+    ]
+   },
+   "properties": {
+    "name": "Steinecke",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.337708,
+     52.488169
+    ]
+   },
+   "properties": {
+    "name": "Mr. Gyros",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.45111,
+     52.51028
+    ]
+   },
+   "properties": {
+    "name": "BerlinApotheke Friedrichshain",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39641,
+     52.513346
+    ]
+   },
+   "properties": {
+    "name": "Groupon GmbH",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.267947,
+     52.508858
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.196331,
+     52.512789
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.186975,
+     52.521295
+    ]
+   },
+   "properties": {
+    "name": "Kaufland Berlin-Wilhelmstadt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.34239,
+     52.50367
+    ]
+   },
+   "properties": {
+    "name": "Restaurant Savour",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409716,
+     52.501876
+    ]
+   },
+   "properties": {
+    "name": "Aral",
+    "category": "gas_station"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.446049,
+     52.553312
+    ]
+   },
+   "properties": {
+    "name": "Supermarket, Bakery, Cafe",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388881,
+     52.517905
+    ]
+   },
+   "properties": {
+    "name": "Esprit Store",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.381402,
+     52.510287
+    ]
+   },
+   "properties": {
+    "name": "Zara",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.416708,
+     52.518651
+    ]
+   },
+   "properties": {
+    "name": "Outopia Berlin - Escape Room Game",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388428,
+     52.520589
+    ]
+   },
+   "properties": {
+    "name": "REWE City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.371611,
+     52.492927
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY GmbH Filiale Yorckstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.370008,
+     52.493515
+    ]
+   },
+   "properties": {
+    "name": "HELLWEG - Die Profi-Baumärkte GmbH & Co. KG",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.425256,
+     52.539182
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.41634,
+     52.540686
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.290542,
+     52.453657
+    ]
+   },
+   "properties": {
+    "name": "Free University Berlin Campus Library",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.389352,
+     52.51259
+    ]
+   },
+   "properties": {
+    "name": "Deutsche Bank Quartier Zukunft",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.432357,
+     52.550825
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.411672,
+     52.555111
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.419941,
+     52.496827
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436668,
+     52.509088
+    ]
+   },
+   "properties": {
+    "name": "KAYAK Technology Center",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.403154,
+     52.520456
+    ]
+   },
+   "properties": {
+    "name": "C3 Creative Code and Content",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.506108,
+     52.564468
+    ]
+   },
+   "properties": {
+    "name": "Linden-Center Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.544787,
+     52.5437
+    ]
+   },
+   "properties": {
+    "name": "EASTGATE Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.343232,
+     52.435176
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Hadersbeck",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.446796,
+     52.523909
+    ]
+   },
+   "properties": {
+    "name": "Netto Marken-Discount City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.416197,
+     52.518946
+    ]
+   },
+   "properties": {
+    "name": "SuperFit Mitte",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.387952,
+     52.549678
+    ]
+   },
+   "properties": {
+    "name": "REWE Center",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38295,
+     52.551373
+    ]
+   },
+   "properties": {
+    "name": "REWE City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.208134,
+     52.561235
+    ]
+   },
+   "properties": {
+    "name": "Kale Gida Berlin Spandau",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.300736,
+     52.519005
+    ]
+   },
+   "properties": {
+    "name": "REWE City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.408388,
+     52.501073
+    ]
+   },
+   "properties": {
+    "name": "Prinzen Apotheke",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.337755,
+     52.50792
+    ]
+   },
+   "properties": {
+    "name": "Zoo Berlin",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.208863,
+     52.562175
+    ]
+   },
+   "properties": {
+    "name": "Hakenfelder Apotheke",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.262542,
+     52.411237
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.308588,
+     52.617625
+    ]
+   },
+   "properties": {
+    "name": "REWE City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.446631,
+     52.525777
+    ]
+   },
+   "properties": {
+    "name": "REWE City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.50645,
+     52.373315
+    ]
+   },
+   "properties": {
+    "name": "Berlin Schönefeld Airport",
+    "category": "transport"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.411877,
+     52.52121
+    ]
+   },
+   "properties": {
+    "name": "McDonald's",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.382949,
+     52.485146
+    ]
+   },
+   "properties": {
+    "name": "Stadtteilbibliothek Dudenstraße \"Friedrich-von-Raumer-Bibliothek\"",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40446,
+     52.51534
+    ]
+   },
+   "properties": {
+    "name": "Berliner Stadtbibliothek",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.410855,
+     52.520919
+    ]
+   },
+   "properties": {
+    "name": "TK Maxx",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.412792,
+     52.543177
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40976,
+     52.52381
+    ]
+   },
+   "properties": {
+    "name": "Nudie Jeans Repair Shop",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436256,
+     52.500681
+    ]
+   },
+   "properties": {
+    "name": "McDonald's Restaurant",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.425958,
+     52.533853
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Winsstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.355622,
+     52.486758
+    ]
+   },
+   "properties": {
+    "name": "SPACE SHACK Coworking",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.441389,
+     52.468468
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.304659,
+     52.508601
+    ]
+   },
+   "properties": {
+    "name": "Alnatura",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.435539,
+     52.494209
+    ]
+   },
+   "properties": {
+    "name": "Talent.io Recruitment GmbH",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.419456,
+     52.532188
+    ]
+   },
+   "properties": {
+    "name": "Netto",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.312088,
+     52.498734
+    ]
+   },
+   "properties": {
+    "name": "Alnatura Super Natur Markt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.445179,
+     52.482433
+    ]
+   },
+   "properties": {
+    "name": "Du Beast",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.414453,
+     52.502075
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.381761,
+     52.410527
+    ]
+   },
+   "properties": {
+    "name": "McDonald's",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.479817,
+     52.471821
+    ]
+   },
+   "properties": {
+    "name": "Netto",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.417378,
+     52.543754
+    ]
+   },
+   "properties": {
+    "name": "Dirty Velvet Drinkery",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.435744,
+     52.479817
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Neukölln",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373323,
+     52.537774
+    ]
+   },
+   "properties": {
+    "name": "Deutsches Rotes Kreuz - Kreisverband Berlin-Zentrum e.V. - Bereitschaften Mitte & Tiergarten",
+    "category": "other"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38848,
+     52.493274
+    ]
+   },
+   "properties": {
+    "name": "HUMANA Secondhand & Vintage",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.435124,
+     52.509633
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434328,
+     52.509895
+    ]
+   },
+   "properties": {
+    "name": "PENNY-Markt Discounter",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.384363,
+     52.456466
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.384363,
+     52.456466
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.384909,
+     52.480906
+    ]
+   },
+   "properties": {
+    "name": "PENNY-Markt Discounter",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.33417,
+     52.506069
+    ]
+   },
+   "properties": {
+    "name": "Zoo Palast",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.426636,
+     52.544013
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY Prenzlauer Allee",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.539219,
+     52.527098
+    ]
+   },
+   "properties": {
+    "name": "Rossmann Drogeriemarkt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.369402,
+     52.525084
+    ]
+   },
+   "properties": {
+    "name": "Berlin Central Station",
+    "category": "transport"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.29252,
+     52.496506
+    ]
+   },
+   "properties": {
+    "name": "LINDNER Esskultur",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.422974,
+     52.526117
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Barnimstraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.431607,
+     52.482057
+    ]
+   },
+   "properties": {
+    "name": "Kaufland",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388664,
+     52.515421
+    ]
+   },
+   "properties": {
+    "name": "LINDNER Esskultur",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.333016,
+     52.503665
+    ]
+   },
+   "properties": {
+    "name": "Karstadt Berlin Kurfürstendamm",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.413711,
+     52.539386
+    ]
+   },
+   "properties": {
+    "name": "Kulturbrauerei",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.41429,
+     52.549504
+    ]
+   },
+   "properties": {
+    "name": "Eckert",
+    "category": "other"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.283404,
+     40.016835
+    ]
+   },
+   "properties": {
+    "name": "Cognizant Quick Left",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.330883,
+     52.51068
+    ]
+   },
+   "properties": {
+    "name": "Central Library of TU Berlin",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.447577,
+     52.505761
+    ]
+   },
+   "properties": {
+    "name": "East Side Mall",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.378942,
+     52.534235
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Sapphire",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.384134,
+     52.52953
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.506842,
+     52.509389
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.40217,
+     52.52329
+    ]
+   },
+   "properties": {
+    "name": "Starbucks",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.343926,
+     52.527748
+    ]
+   },
+   "properties": {
+    "name": "Schultheiss Quartier",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.34421,
+     52.527017
+    ]
+   },
+   "properties": {
+    "name": "dm-drogerie markt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.442566,
+     52.504351
+    ]
+   },
+   "properties": {
+    "name": "Kamps Bäckerei",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.329379,
+     52.503092
+    ]
+   },
+   "properties": {
+    "name": "Hard Rock Cafe Berlin",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.408036,
+     52.522249
+    ]
+   },
+   "properties": {
+    "name": "THE REED",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.410671,
+     52.520667
+    ]
+   },
+   "properties": {
+    "name": "Vapiano",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.339245,
+     52.503435
+    ]
+   },
+   "properties": {
+    "name": "UNIQLO Tauentzien - Flagship Store",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4659,
+     52.51592
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.452073,
+     52.510477
+    ]
+   },
+   "properties": {
+    "name": "Domke Nino Fleischerei",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.347066,
+     52.500624
+    ]
+   },
+   "properties": {
+    "name": "Conrad Electronic",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.275856,
+     52.449281
+    ]
+   },
+   "properties": {
+    "name": "Library of Social Sciences and Eastern European Studies",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.345655,
+     52.489311
+    ]
+   },
+   "properties": {
+    "name": "PENNY-Markt Discounter",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.387523,
+     52.526134
+    ]
+   },
+   "properties": {
+    "name": "BerlinApotheke Schneider & Oleski oHG",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.430924,
+     52.479449
+    ]
+   },
+   "properties": {
+    "name": "KINDL - Zentrum für zeitgenössische Kunst",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.405827,
+     52.4987
+    ]
+   },
+   "properties": {
+    "name": "Netto Filiale",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.325768,
+     52.528001
+    ]
+   },
+   "properties": {
+    "name": "ED & FRED Nussdepot & AL-JAZEERA pastry",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.46335,
+     52.515082
+    ]
+   },
+   "properties": {
+    "name": "Salami Social Club",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.451334,
+     52.478482
+    ]
+   },
+   "properties": {
+    "name": "KiK Textilien und Non-Food GmbH",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.405476,
+     52.403999
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.339586,
+     52.558631
+    ]
+   },
+   "properties": {
+    "name": "City Kino Wedding",
+    "category": "cinema"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.387715,
+     52.521371
+    ]
+   },
+   "properties": {
+    "name": "AllSaints",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.321478,
+     52.505544
+    ]
+   },
+   "properties": {
+    "name": "coffee drink your monkey",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.498385,
+     52.560628
+    ]
+   },
+   "properties": {
+    "name": "Hansa Center Berlin",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390736,
+     52.507585
+    ]
+   },
+   "properties": {
+    "name": "Kentucky Fried Chicken",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.308164,
+     52.467273
+    ]
+   },
+   "properties": {
+    "name": "Zwilling-Apotheke",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39745,
+     52.53025
+    ]
+   },
+   "properties": {
+    "name": "Ackerstraße 5",
+    "category": "other"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.372953,
+     52.520201
+    ]
+   },
+   "properties": {
+    "name": "Bundestag",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.356069,
+     52.485604
+    ]
+   },
+   "properties": {
+    "name": "TK Maxx",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390476,
+     52.516815
+    ]
+   },
+   "properties": {
+    "name": "The Digital Eatery",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.428028,
+     52.542994
+    ]
+   },
+   "properties": {
+    "name": "Zeiss Major Planetarium",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.41411,
+     52.542367
+    ]
+   },
+   "properties": {
+    "name": "Mon Plaisir",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.412591,
+     52.538222
+    ]
+   },
+   "properties": {
+    "name": "FRANNZ Club",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.464244,
+     52.515062
+    ]
+   },
+   "properties": {
+    "name": "Steinecke Brotmeisterei",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.38248,
+     52.555172
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.373442,
+     52.509971
+    ]
+   },
+   "properties": {
+    "name": "Deutsche Kinemathek",
+    "category": "culture"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.409136,
+     52.489202
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Siebert",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.449924,
+     52.509108
+    ]
+   },
+   "properties": {
+    "name": "dm-drogerie markt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.282063,
+     52.478359
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Meichsner-Görse",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.450581,
+     52.519898
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Schnelle",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.42302,
+     52.535425
+    ]
+   },
+   "properties": {
+    "name": "Yama Restaurant japanisches Spezialität und Sushi",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.369412,
+     52.549303
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.356493,
+     52.481855
+    ]
+   },
+   "properties": {
+    "name": "co.Lab, Euref-Campus, Haus 22",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390209,
+     52.512229
+    ]
+   },
+   "properties": {
+    "name": "Mindspace",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.39084,
+     52.510523
+    ]
+   },
+   "properties": {
+    "name": "Rewe City",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.42996,
+     52.584259
+    ]
+   },
+   "properties": {
+    "name": "Rewe Supermarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.352896,
+     52.549608
+    ]
+   },
+   "properties": {
+    "name": "TARGOBANK",
+    "category": "office"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.355586,
+     52.541608
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Schatz",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.318138,
+     52.506215
+    ]
+   },
+   "properties": {
+    "name": "Madame Ngo une Brasserie Hanoi",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.316736,
+     52.505906
+    ]
+   },
+   "properties": {
+    "name": "893 Ryōtei Japanese Restaurant",
+    "category": "restaurant"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.46864,
+     52.515972
+    ]
+   },
+   "properties": {
+    "name": "dm-drogerie markt",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.388773,
+     52.5489
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.467597,
+     52.507811
+    ]
+   },
+   "properties": {
+    "name": "PENNY",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.459774,
+     52.512598
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.466739,
+     52.508424
+    ]
+   },
+   "properties": {
+    "name": "denn's Biomarkt",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.559009,
+     52.506316
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY Biesdorf Center",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.196603,
+     52.533775
+    ]
+   },
+   "properties": {
+    "name": "Spandau Arcaden",
+    "category": "shopping"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.437899,
+     52.479166
+    ]
+   },
+   "properties": {
+    "name": "die deutSCHule",
+    "category": "other"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.473193,
+     52.503874
+    ]
+   },
+   "properties": {
+    "name": "Kaufland Berlin Victoria Center",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.383715,
+     52.530176
+    ]
+   },
+   "properties": {
+    "name": "BIO COMPANY Chausseestraße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.390512,
+     52.512608
+    ]
+   },
+   "properties": {
+    "name": "Holmes Place Gendarmenmarkt",
+    "category": "fitness"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.421516,
+     52.486529
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Fiebig",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.347554,
+     52.552644
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Fromm",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.325535,
+     52.486789
+    ]
+   },
+   "properties": {
+    "name": "EDEKA Berliner Straße",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4973,
+     52.50974
+    ]
+   },
+   "properties": {
+    "name": "Lichtenberg Pharmacy",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.59964,
+     52.548949
+    ]
+   },
+   "properties": {
+    "name": "Kaufpark Apotheke",
+    "category": "drugstore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.325274,
+     52.509292
+    ]
+   },
+   "properties": {
+    "name": "Steinecke",
+    "category": "cafe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.412542,
+     52.506618
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436397,
+     52.457001
+    ]
+   },
+   "properties": {
+    "name": "TOTAL Tankstelle",
+    "category": "gas_station"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.433967,
+     52.440208
+    ]
+   },
+   "properties": {
+    "name": "REWE",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.433786,
+     52.434123
+    ]
+   },
+   "properties": {
+    "name": "NG Markt - Britz",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434341,
+     52.439994
+    ]
+   },
+   "properties": {
+    "name": "ALDI Berlin-Buckow",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.436737,
+     52.439403
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.434251,
+     52.426278
+    ]
+   },
+   "properties": {
+    "name": "Lidl",
+    "category": "supermarket"
+   }
+  }
+ ]
+}

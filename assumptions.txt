@@ -1,0 +1,114 @@
+ASSUMPTIONS & DECISIONS — adding category filters to kaltekarte.berlin
+Date: 2026-06-27
+Fork: https://github.com/Migelo/kaltekarte.berlin   (branch: add-category-filters)
+
+================================================================================
+THE CORE PROBLEM (why this was more than a UI change)
+================================================================================
+The original site did not contain a real map or any point data. The "map" was a
+single Google My Maps embed inside an <iframe> (mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l).
+An iframe to Google My Maps is opaque: you cannot reach into it to show/hide
+markers, and the 388 points live inside Google's product with NO category field
+(only name + coordinates).
+
+=> You cannot add category filters to a Google My Maps iframe. To make filtering
+   possible at all, the map had to be rebuilt as a real client-side map whose
+   point data we control. That is what was done.
+
+================================================================================
+WHAT WAS CHANGED
+================================================================================
+- index.html : replaced the Google My Maps <iframe> with a Leaflet map div,
+               added Leaflet + MarkerCluster (via unpkg CDN) and a filter panel.
+               Removed the old iframe-recentre geolocation snippet (app.js now
+               handles geolocation). Analytics (Google Analytics + Facebook
+               Pixel) and OG/meta tags were left untouched.
+- main.css   : styles for the map, the filter overlay panel, the category
+               chips/legend, the coloured markers and popups.
+- app.js     : NEW. Loads points.geojson, renders clustered category-coloured
+               markers, builds the filter UI, and handles geolocation.
+- points.geojson : NEW. The 388 points exported from Google My Maps, each tagged
+               with a category. This is now the version-controlled source of truth.
+- tools/generate_geojson.py : NEW. Regenerates points.geojson from a KML export.
+- tools/kaltekarte.kml      : NEW. The raw Google My Maps KML this was built from
+               (snapshot taken 2026-06-27).
+
+================================================================================
+KEY ASSUMPTIONS / DECISIONS
+================================================================================
+1. MAP STACK = Leaflet + OpenStreetMap tiles (NO Google / no API key).
+   For a static GitHub Pages site this is the correct stack: free OSM tiles, no
+   API key, no billing, no quota, attribution included. The Google Maps
+   JavaScript API and Google Places API both REQUIRE a billing-enabled key
+   (a credit card on file), which is a hard blocker I cannot set up on your
+   behalf. Choosing Leaflet legitimately removes the need for any Google dev key,
+   so none was created.
+
+2. CATEGORIES WERE DERIVED, NOT GIVEN.
+   The source data has no category/type field whatsoever. Categories were
+   inferred heuristically from each business NAME using chain/keyword matching
+   (see tools/generate_geojson.py). Result: 384 of 388 points auto-categorised;
+   4 left as "Other". This is best-effort and WILL contain some mistakes
+   (e.g. a local shop named ambiguously may land in the wrong bucket, and
+   independent venues are harder than chains). To correct/refine: edit the RULES
+   in tools/generate_geojson.py and re-run it.
+
+   Category set & counts at time of writing:
+     supermarket 150 | shopping 53 | office 37 | restaurant 31 | cafe 29 |
+     culture 26 | drugstore 24 | cinema 16 | fitness 7 | hotel 5 | other 4 |
+     gas_station 3 | transport 3
+   ("restaurant" includes bars/clubs; "shopping" includes malls, department
+    stores, fashion, electronics, furniture; "drugstore" includes pharmacies;
+    "office" includes coworking; "culture" includes museums/libraries/galleries.)
+
+   If you want Google-Places-grade accuracy instead of name heuristics, that can
+   be added later with a billing-enabled Google API key (look up each point's
+   `types` and map them to categories) — say the word and I'll wire it up.
+
+3. DATA IS A SNAPSHOT.
+   points.geojson reflects the Google My Maps content as of 2026-06-27. The
+   "Add a location" button still points at the original Google Form, so NEW
+   submissions go into Google My Maps, NOT into points.geojson. There is now a
+   gap between the two. Options: (a) periodically re-export the KML and re-run
+   tools/generate_geojson.py, or (b) move the submission flow to write to the
+   GeoJSON / a small backend. For now option (a) is assumed.
+
+4. LIBRARY VERSIONS: Leaflet 1.9.4 and leaflet.markercluster 1.5.3, loaded from
+   unpkg CDN. Assumed acceptable for a no-build static site (matches the existing
+   pattern of loading third-party scripts from CDNs).
+
+5. GEOLOCATION preserved: on load the page asks for location and, if granted AND
+   you are within the Berlin bounding box, recentres the map and drops a
+   "You are here" marker. If denied, it is silently ignored.
+
+6. CLUSTERING is on (388 markers would be cluttered otherwise). Toggling a
+   category off removes its markers from the cluster immediately.
+
+7. CNAME LEFT UNCHANGED. The repo's CNAME still says "kaltekarte.jessepinho.com"
+   (the upstream owner's domain). I did NOT touch it because it is the original
+   author's domain configuration, not mine to repoint. NOTE: to see this live on
+   YOUR fork you must enable GitHub Pages on Migelo/kaltekarte.berlin and decide
+   on a domain; the existing CNAME will conflict with custom-domain hosting on
+   the fork. Deployment/Pages settings were intentionally left to you.
+
+8. og:image still references the old static map screenshot (map.f18ffe68.jpg).
+   It is now slightly out of date but harmless; left in place.
+
+9. NO PULL REQUEST TO UPSTREAM. Work was pushed only to YOUR fork
+   (Migelo/kaltekarte.berlin) on branch add-category-filters. I did not open a PR
+   against jessepinho/kaltekarte.berlin, since contributing to a third party's
+   repo wasn't requested.
+
+================================================================================
+HOW TO RUN / VERIFY LOCALLY
+================================================================================
+  cd <repo root>
+  python3 -m http.server 8000
+  open http://localhost:8000
+(A static server is needed because app.js fetches points.geojson; opening
+index.html via file:// will be blocked by CORS.)
+
+To regenerate the data after editing categories or re-exporting from My Maps:
+  # refresh tools/kaltekarte.kml from:
+  #   https://www.google.com/maps/d/kml?mid=1-E2_36nT5MzhQH-0CoPhu2a9Cly8qm7l&forcekml=1
+  python3 tools/generate_geojson.py     # rewrites points.geojson

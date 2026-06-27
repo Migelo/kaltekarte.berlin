@@ -56,4 +56,204 @@ body {
   border: none;
   flex-grow: 1;
   width: 100%;
+  z-index: 0;
+}
+
+/* ---- Filter panel (overlay on top of the map) ---- */
+
+#filters {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  width: 280px;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 90px);
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.filter-title {
+  flex-grow: 1;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.filter-ctl {
+  background: #4d6a79;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+.filter-ctl:hover {
+  background: #3c5462;
+}
+
+#filter-chips {
+  padding: 8px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#filters.collapsed #filter-chips {
+  display: none;
+}
+
+.filter-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #888;
+  text-align: left;
+  opacity: 0.55;
+  transition: opacity 0.12s, background 0.12s;
+}
+
+.filter-chip.active {
+  opacity: 1;
+  color: #2c3e50;
+  background: #fff;
+  border-color: #c7c7c7;
+}
+
+.filter-chip .lbl {
+  flex-grow: 1;
+}
+
+.filter-chip .cnt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7f8c8d;
+  background: #ececec;
+  border-radius: 10px;
+  padding: 1px 7px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.filter-chip .dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.filter-chip .dot .ic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* ---- Map markers ---- */
+/* Category colour is the outer ring; the emoji sits on a white inner disc so
+   it stays legible regardless of the background colour (e.g. cart on green). */
+
+.cat-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cat-marker > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.popup strong {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.popup-cat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.popup-cat .dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.popup-cat .dot .ic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.err {
+  color: #c0392b;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  #filters {
+    width: 230px;
+  }
 }
