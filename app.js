@@ -287,6 +287,12 @@ function addPoints(geojson) {
         '" target="_blank" rel="noopener noreferrer">Website &#8599;</a>';
     }
 
+    // Prefilled "suggest removal" GitHub issue for this exact place.
+    var removeUrl = ISSUE_BASE + '?template=remove-location.yml' +
+      '&title=' + encodeURIComponent('Remove location: ' + name) +
+      '&place-name=' + encodeURIComponent(name) +
+      '&coordinates=' + encodeURIComponent(lat.toFixed(6) + ',' + lon.toFixed(6));
+
     marker.bindPopup(
       '<div class="popup">' +
       '<strong>' + escapeHtml(name) + '</strong>' +
@@ -301,6 +307,8 @@ function addPoints(geojson) {
       '" target="_blank" rel="noopener noreferrer">Cycle here &#8599;</a>' +
       webLink +
       '</div>' +
+      '<a class="popup-remove" href="' + removeUrl +
+      '" target="_blank" rel="noopener noreferrer">Suggest removal</a>' +
       '</div>'
     );
     allMarkers.push({ category: cat, marker: marker, name: name, lat: lat, lon: lon, id: idx });

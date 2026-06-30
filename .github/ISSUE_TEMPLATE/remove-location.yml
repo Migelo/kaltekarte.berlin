@@ -1,0 +1,42 @@
+name: Suggest a removal
+description: Flag a place that should be taken off the map (closed, not actually air-conditioned, wrong spot...).
+title: "Remove location: "
+labels: ["remove-location"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you came from a pin's **"Suggest removal"** link, the name and
+        coordinates below are already filled in. A maintainer reviews every
+        suggestion before anything is removed.
+  - type: input
+    id: place-name
+    attributes:
+      label: Place name
+    validations:
+      required: true
+  - type: input
+    id: coordinates
+    attributes:
+      label: Coordinates (lat,lon)
+      description: Decimal degrees, e.g. 52.520000,13.405000
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Why should it be removed?
+      options:
+        - Permanently closed
+        - Not actually air-conditioned
+        - Wrong location
+        - Duplicate
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? (optional)
+    validations:
+      required: false

@@ -1,0 +1,66 @@
+name: Removal suggestion to PR
+
+# When someone files a "Suggest a removal" issue (via a pin's "Suggest removal"
+# link or the issue form), parse it, append the place to
+# tools/removed_locations.json, regenerate points.geojson (which drops it), and
+# open a PR automatically. The maintainer just reviews and merges.
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: removal-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  removal:
+    if: contains(github.event.issue.labels.*.name, 'remove-location')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Parse issue and flag location for removal
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python3 tools/issue_to_removal.py
+
+      - name: Regenerate points.geojson
+        run: python3 tools/generate_geojson.py
+
+      - name: Open a PR
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: 'data: remove location from #${{ github.event.issue.number }}'
+          title: 'Remove location from #${{ github.event.issue.number }}'
+          body: |
+            Closes #${{ github.event.issue.number }}
+
+            Adds a community-flagged place to `tools/removed_locations.json` and
+            regenerates `points.geojson` (which now drops it). Check the
+            suggestion before merging.
+          branch: 'auto/removal-${{ github.event.issue.number }}'
+          delete-branch: true
+          add-paths: |
+            tools/removed_locations.json
+            points.geojson
+
+      - name: Comment failure on the issue
+        if: failure()
+        uses: actions/github-script@v9
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "Sorry - I couldn't process this removal automatically. " +
+                    "Please check the **Place name** and **Coordinates (lat,lon)** " +
+                    "fields. See the [workflow run](" + context.serverUrl + "/" +
+                    context.repo.owner + "/" + context.repo.repo + "/actions/runs/" +
+                    context.runId + ") for details."
+            })

@@ -176,11 +176,24 @@ def main():
         overrides = {norm(k): v for k, v in
                      json.load(open(opath, encoding="utf-8")).items()}
 
+    # Locations the community flagged for removal (closed / no AC / wrong spot),
+    # accepted via the "Suggest removal" flow. Keyed by "lat,lon" at 6 decimals
+    # so it works for both KML and community points.
+    removed = set()
+    rpath = os.path.join(HERE, "removed_locations.json")
+    if os.path.exists(rpath):
+        for item in json.load(open(rpath, encoding="utf-8")):
+            try:
+                removed.add("{:.6f},{:.6f}".format(float(item["lat"]), float(item["lon"])))
+            except (KeyError, TypeError, ValueError):
+                pass
+
     features = []
     counts = Counter()
     others = []
-    rejected = []   # outside Berlin / unparseable
-    dupes = []      # exact (name, coordinate) repeats
+    rejected = []      # outside Berlin / unparseable
+    dupes = []         # exact (name, coordinate) repeats
+    removed_hits = []  # excluded via removed_locations.json
     seen = set()
 
     # Collect raw (name, lon, lat) points from the KML export...
@@ -223,6 +236,9 @@ def main():
             dupes.append(name)
             continue
         seen.add(key)
+        if "{:.6f},{:.6f}".format(lat, lon) in removed:
+            removed_hits.append(name)
+            continue
 
         cat = categorize(name)
         e = enrich.get("{:.6f},{:.6f}".format(lat, lon), {})
@@ -268,6 +284,9 @@ def main():
     print(f"\n=== {len(dupes)} duplicates dropped ===")
     for d in dupes:
         print("   ", d)
+    print(f"\n=== {len(removed_hits)} removed (community-flagged) ===")
+    for r in removed_hits:
+        print("   ", r)
     print(f"\n=== {len(others)} 'other' (uncategorized) ===")
     for o in others:
         print("   ", o)
